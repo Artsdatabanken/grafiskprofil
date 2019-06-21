@@ -5,6 +5,10 @@ Målet med dette prosjektet er å samle informasjon om den grafiske profilen og 
 
 - WIKIEN VÅR: https://github.com/Artsdatabanken/grafiskprofil/wiki
 
+
+![image](https://user-images.githubusercontent.com/17450081/59921614-8d355580-942e-11e9-9e69-12d479473fce.png)
+
+
 ## Mål
 - Kartlegge vår nåværende bruk av profil og dens element
 - Se hvordan dette henger sammen ed universal utforming og hva som strider i mot
