@@ -7,8 +7,7 @@ Målet med dette prosjektet er å samle informasjon om den grafiske profilen og 
 
 
 # Oversikt over prosess og hva som skjer hvor
-![image](https://user-images.githubusercontent.com/17450081/59921614-8d355580-942e-11e9-9e69-12d479473fce.png)
-
+![image](https://user-images.githubusercontent.com/281359/59923787-8f021780-9434-11e9-98af-3712f58c7eb2.png)
 
 ## Mål
 - Kartlegge vår nåværende bruk av profil og dens element
