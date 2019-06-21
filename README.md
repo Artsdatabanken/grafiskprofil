@@ -1,6 +1,10 @@
 # Grafisk Profil for Artsdatabanken
 Målet med dette prosjektet er å samle informasjon om den grafiske profilen og hvordan den er tatt i bruk, og å videreutvikle den /endre den på sikt så den er mer nyttig ovenfor web.
 
+# Hvor lagrer vi det som er bestemt?
+
+- WIKIEN VÅR: https://github.com/Artsdatabanken/grafiskprofil/wiki
+
 ## Mål
 - Kartlegge vår nåværende bruk av profil og dens element
 - Se hvordan dette henger sammen ed universal utforming og hva som strider i mot
