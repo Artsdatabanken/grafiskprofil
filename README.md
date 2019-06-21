@@ -9,15 +9,29 @@ Målet med dette prosjektet er å samle informasjon om den grafiske profilen og 
 # Oversikt over prosess og hva som skjer hvor
 ![image](https://user-images.githubusercontent.com/281359/59923787-8f021780-9434-11e9-98af-3712f58c7eb2.png)
 
-## Mål
+## Første Fase: Settes opp som en issue, og kan redigeres fritt
+1. Identifisere fokusområder
+2. Utrede begrensninger, retningslinjer og målgruppe samt målgruppespesifikke krav, se prioriteringshierarki.
+3. Sammestille og presentere et tema/fokusområde
+
+## Andre fase: kommentarfelt tilhørende en issue
+4. Åpen debatt basert på innsamlet info og evt. andre ting 
+5. Vedta en løsning som skal være gjeldene for alle våre nettsider og applikasjoner, og nevn eller urewd eventuelle unntak
+
+## Tredje fase:
+6. Sammenstill alt om temaet i en egen side i vår WIKI https://github.com/Artsdatabanken/grafiskprofil/wiki
+
+# Mål
 - Kartlegge vår nåværende bruk av profil og dens element
-- Se hvordan dette henger sammen med universal utforming og hva som strider i mot
-- Se etter hva som er forskjellig i de forskjellige prosjektene, i håp om å få noe som kan brukes på alt
 - Lage en oversikt over hvilke behov vi har og hvilke problemstillinger
+- Forbedre i forhold til vårt prioriteringshierarki
+- Finne løsninger for alt som er forskjellig i de forskjellige prosjektene
 - Velge ut noe å ordne på kort sikt, og noe på lengre sikt
 - Få innspill fra alle som har noe å mene, her på GitHub kan alle få ytre seg fritt, så får vi en fin diskusjon
 - Alt må selvfølgelig begrunnes saklig
-- For hvert ting man blir enige om, lager man en WIKI-side med bilder av hvordan noe skal se ut, og gjerne noen kodesnutter om man har det. Slik kan det lett brukes i flere prosjekter. Målet er ikke å lage standardobjekter, da det benyttes mye forskjellig teknologi, og ting uansett må tilpasses mye i hvert prosjekt. For eksempel kan en kodesnutt være en css-styling for en knapp som man kan legge på passende sted i sine prosjekt.
+- Opprette løsninger og muligens noen eksempelkodesnutter for løsningene for gjenbruk.
+
+P.S. Målet er ikke å lage standardobjekter, da det benyttes mye forskjellig teknologi, og ting uansett må tilpasses mye i hvert prosjekt. For eksempel kan en kodesnutt være en css-styling for en knapp som man kan legge på passende sted i sine prosjekt.
 
 ## Hvordan går vi frem?
 - Tanken er i utgangspunktet at vi legger til alle ønsker og tanker og tema som en egen issue. 
@@ -27,13 +41,19 @@ Målet med dette prosjektet er å samle informasjon om den grafiske profilen og 
 - Vi kommer også til å lage prosjekter etterhvert, i fanen Projects. Der kan man sortere når man velger å jobbe med forskjellige ting og sånt. Meget praktisk kanban-board.
 - Når vi har en løsning for noe, oppretter vi en side for det i Wikien i wiki-tabben.
 
-## Hvem kan gjøre hva?
-- I utgangspunktet er det eneste som kreves for å kommentere ting på GitHub en bruker.
-- Det er fint å ha uansett, for da kan du også kommentere eller lage issues på andre prosjekter IT jobber med, og det er jo topp!
-- Vi ønsker innspill fra alle!
-
 ## Jeg skjønner ikke noe, hvordan virker dette?
 1) Trykk på "Issues". Her finner du liste over alt vi har lagt til av tema å jobbe med.
 2) Lag deg en bruker på GitHub om du ikke har om du ønsker å ta del i prosessen! Vi ønsker å få med alle meninger dere sitter på.
 3) Kommenter og legg til issues så mye du vil. Helene har satt opp en mal for nye issues, så fyll inn den om du vil ha litt hjelp til hva som er nyttig
+
+## Hvem kan gjøre hva?
+- I utgangspunktet er det eneste som kreves for å kommentere og redigere å ha en GitHub en bruker 
+    - Mulig det ligger begrensinger på høyere nivå som krever at du er medlem av vår gruppe, isåfall: si i fra så fikser vi.
+- Helene begynner arbeidet med å legge til og utrede ting, men dere er alle hjertelige velkomne til å hjelpe til. Hun kommer til å se over og legge til kilder uansett. 
+- Åshild bidrar med kunnskap om design og grafiske element og tidligere profil (etterhvert)
+- Hvis du sitter på kilder på noe, oppfordrer vi sterkt til å legge de inn som en kommentar på relevant issue
+    - En bruker er fint å ha uansett, for da kan du også kommentere eller lage issues på andre prosjekter IT jobber med
+- Vi ønsker innspill fra alle!
+
+
 
