@@ -1,4 +1,15 @@
-# Grafisk Profil for Artsdatabanken
+# Grafisk Profil og Templates for Artsdatabanken
+Dette prosjektet inneholder en del ferdige stilsett, sidetemplates og elementer som gjør at man raskt kan sette opp et design som ser ut som hjemmesiden vår. Tanken er at man ved å oppdatere her kan oppdatere alle underprosjekt som benytter samme stilsett. Utseendet gis av den grafiske profilen for web som justeres i wikien i dette prosjektet.
+
+Prosjektets datafiler og referansesett kan refereres direkte til filene som hostes på:
+https://design.artsdatabanken.no/
+
+Prosjekt som tar deler av dette i bruk:
+- https://github.com/Artsdatabanken/doi-frontend
+- https://github.com/Artsdatabanken/assessments-frontend
+
+
+# Grafisk Profil - prosjektet for Artsdatabanken
 Målet med dette prosjektet er å samle informasjon om den grafiske profilen og hvordan den er tatt i bruk, og å videreutvikle den /endre den på sikt så den er mer nyttig ovenfor web.
 
 # Hvor lagrer vi det som er bestemt?
