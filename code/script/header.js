@@ -40,13 +40,13 @@ function getHeaderMenu(){
         })
         .then((data) => {     
             try{
-                console.log("received data")
+                //console.log("received data")
                 let apimenus = data.Records;            
                 for (let i in apimenus){
                     let item = apimenus[i];
                     let id = item.Values.toString().replace(" ","");
 
-                    console.log("stage 1")
+                    //console.log("stage 1")
                     // Using createelement to enable attachment of eventlistener
                     let buttonname = item.Values;
                     if(buttonname == "English"){
@@ -58,7 +58,7 @@ function getHeaderMenu(){
                         return null;                       
                     }
 
-                    console.log("stage 2")
+                    //console.log("stage 2")
                     let menubutton = document.createElement('button');
                     menubutton.className = "menuitems";                    
                     let dropicon = " <span class='dropicon material-icons'>arrow_drop_down</span>";
@@ -66,7 +66,7 @@ function getHeaderMenu(){
                     // Generate the dropdowncontent 
                     let newdropdown ="<ul class='dropdown' id='"+id+"' style='display:none'>";      
                     let subitems = item.References;  
-                    console.log("stage 3")                  
+                    //console.log("stage 3")                  
                     for(let j in subitems){
                         subitem = subitems[j];                        
                         let infotext = "";
@@ -95,7 +95,7 @@ function getHeaderMenu(){
                     }                
                     newdropdown +="</ul>";
                     
-                    console.log("stage 4")
+                    //console.log("stage 4")
                     // ADD ALL BUTTONCNTENT
                     menubutton.innerHTML = buttonname+dropicon+ newdropdown; // attach it
 
@@ -123,7 +123,7 @@ function getHeaderMenu(){
                         }
                     });
                     // Add to page
-                    console.log("stage 5")
+                    //console.log("stage 5")
                     appendData('headermenu',menubutton);
                 }
             }catch(err){
@@ -136,4 +136,19 @@ function getHeaderMenu(){
     }catch{
         console.log("error in headermenu")
     }
+}
+
+function appendData(id,content){
+    
+    if(content!= undefined && id!= undefined ){
+        try{
+            document.getElementById(id).appendChild(content);
+        } catch(err){
+            console.error("failed for id: ",id,"and content:" ,content);
+        }
+        
+    }else{
+        // To avoid entire page breaking down if one error occurs
+        console.error("no such content ", id,content);
+    }            
 }
