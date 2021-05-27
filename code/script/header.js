@@ -1,9 +1,19 @@
+// Startup
+window.addEventListener('load', function() {
+    console.log("loaded script header")
+    getHeaderMenu();
+})
+
 window.addEventListener('click', function(e) {
     // Closes dropdown menu when clicking outside it. 
     if (document.getElementById('headermenu')){
         if (!document.getElementById('headermenu').contains(e.target)) {
-            document.getElementById("Omoss").style.display = "none";
-            document.getElementById("Meny").style.display = "none";
+            if(document.getElementById("Omoss")){
+                document.getElementById("Omoss").style.display = "none";
+            }
+            if(document.getElementById("Meny")){
+                document.getElementById("Meny").style.display = "none";
+            }
             //document.getElementById("English").style.display = "none";
         }
 
@@ -15,7 +25,6 @@ window.addEventListener('click', function(e) {
                 drop.className = "hide"
             }
         }
-
    }
 })
 

@@ -1,4 +1,9 @@
 
+// Startup
+window.addEventListener('load', function() {
+    console.log("loaded script footer")
+    getFooter();
+})
 
 // Lets pretend this is a part of the main site
 function getFooter(){       
