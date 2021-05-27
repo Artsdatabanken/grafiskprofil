@@ -1,0 +1,11 @@
+language: node_js
+dist: trusty
+branches:
+  only:
+  - main
+  - master
+
+install:
+  - sudo apt-get install -y sshpass
+
+script: bash ./deploy.sh
