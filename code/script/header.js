@@ -139,6 +139,7 @@ function getHeaderMenu(){
 }
 
 function appendData(id,content){
+    console.log("appending header data")
     
     if(content!= undefined && id!= undefined ){
         try{
@@ -151,4 +152,13 @@ function appendData(id,content){
         // To avoid entire page breaking down if one error occurs
         console.error("no such content ", id,content);
     }            
+}
+
+function $(id){
+    if(id[0]=="."){        
+        return document.getElementsByClassName(id.substring(1));
+    }else if(id[0]=="#"){
+        return document.getElementById(id.substring(1));
+    }
+    return document.getElementById(id);
 }
