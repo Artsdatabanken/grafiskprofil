@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Template</title>
+    <link href="https://design.artsdatabanken.no/style/style-reset.css" rel="stylesheet" />
+    <link href="https://design.artsdatabanken.no/style/layout.css" rel="stylesheet" />
+    <link href="https://design.artsdatabanken.no/style/header-footer.css" rel="stylesheet" />   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+<header class="header">   
+    <div class="width-adjuster">
+        <a href="https://artsdatabanken.no" class="header-logo">
+            <img  alt="Artsdatabanken" src="https://artsdatabanken.no/Files/20973" class="normal">
+            <img  alt="Artsdatabanken" src="https://artsdatabanken.no/Files/20978" class="mobile">
+        </a>
+           <button id="navbar-mobile" class='material-icons'>menu</button>
+        <nav id="headermenu" class="hide"></nav>
+    </div>
+</header>
+    <div class="main">
+        
+        <div class="main-content width-adjuster">
+
+            <div class="breadcrumbs">
+                <ul>
+                    <li class="lead in-breadcrumb">
+                        <a href="">
+                            Template <!-- Top level breadcrumb--> 
+                        </a>
+                    </li>
+                    <span >     
+                        <!-- Add more breadcrumbs -->                 
+                    </span>     
+                </ul>
+            </div>            
+            <div class="sidebarmenu"><!-- ADD SIDEBAR ELEMENTS HERE IF WANTED --> </div>
+
+            <div class="content-placer">
+                <div class="page-header">
+                    <h1>
+                        Maler <!-- ADD Page title --> 
+                    </h1>
+                    <h2> Her samler vi styling og maler som kan benyttes direkte </h2>
+                    <span class="byline">
+                       Under arbeid i juni 2021 <!-- Change this element --> 
+                    </span>
+                </div>
+
+
+                <div class="mid">
+                    <div class="ingress">
+                        <p>
+                           <!-- Change this element --> 
+                           I denne siden vil vi samle litt maler og stiler som kan benyttes direkte herifra når man lager en ny løsning. 
+                           Fordelen med de er at en hver oppdatering som skjer her vil direkte redigere alle sidene som benytter disse stilsettene.
+
+                        </p>
+                    </div>        
+
+                    <div class="section">
+                        <h2>Avsnittsoverskrift</h2>                            
+                        <p>
+                            Så langt har vi to ansamlinger av datatyper, scripts og css.
+                            For en interaktiv side må man ofte linke opp begge deler.
+                            <ul>
+                                <li><a href="https://design.artsdatabanken.no/style/">Index av stilsett</a></li>
+                                <li><a href="https://design.artsdatabanken.no/script/">Index av scripts</a></li>
+                                <li><a href="https://design.artsdatabanken.no/templates/">Index av ferdige templates</a></li>
+                            </ul>
+                        </p>
+
+                        <p>
+                            Noen av elementene krever både en javascript fil, et stilsett og en html-snippet. 
+                            Per nå er det kun laget javascript-versjoner av f.eks headeren, men på sikt vil det dukke opp 
+                            versjoner som kan hentes ned server side i f.eks .net core prosjektene. Vi er ikke helt der ennå.
+                        </p>
+                    </div>
+                 
+                                       
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer" >        
+    </footer>
+</body>
+</html>
