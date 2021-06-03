@@ -337,3 +337,23 @@ footer table td:first-child {
     }
 }
 
+.main{
+    /* 
+    If we have a header and footer, this height is what 
+    will place the footer at page bottom. The px value shall
+    always be the height of the footer + the height of the header.
+    */
+    min-height: calc(100vh - 293px);
+}
+
+@media only screen and (max-width: 765px){
+    .main{
+        min-height: calc(100vh - 430px);
+    }
+}
+
+@media only screen and (max-width: 527px){
+    .main{
+        min-height: calc(100vh - 448px);
+    }
+}
