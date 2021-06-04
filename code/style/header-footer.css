@@ -337,6 +337,7 @@ footer table td:first-child {
     }
 }
 
+.main-content,
 .main{
     /* 
     If we have a header and footer, this height is what 
@@ -347,12 +348,14 @@ footer table td:first-child {
 }
 
 @media only screen and (max-width: 765px){
+    .main-content,
     .main{
         min-height: calc(100vh - 430px);
     }
 }
 
 @media only screen and (max-width: 527px){
+    .main-content,
     .main{
         min-height: calc(100vh - 448px);
     }
