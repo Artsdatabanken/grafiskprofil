@@ -6,7 +6,9 @@
     <title>Template</title>
     <link href="https://design.artsdatabanken.no/style/style-reset.css" rel="stylesheet" />
     <link href="https://design.artsdatabanken.no/style/layout.css" rel="stylesheet" />
-    <link href="https://design.artsdatabanken.no/style/header-footer.css" rel="stylesheet" />   
+    <link href="https://design.artsdatabanken.no/style/header-footer.css" rel="stylesheet" /> 
+    <script src="https://design.artsdatabanken.no/script/header.js"></script> 
+    <script src="https://design.artsdatabanken.no/script/footer.js"></script>  
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
@@ -61,7 +63,7 @@
                     </div>        
 
                     <div class="section">
-                        <h2>Avsnittsoverskrift</h2>                            
+                        <h2>Hva har vi laget?</h2>                            
                         <p>
                             Så langt har vi to ansamlinger av datatyper, scripts og css.
                             For en interaktiv side må man ofte linke opp begge deler.
@@ -77,6 +79,28 @@
                             Per nå er det kun laget javascript-versjoner av f.eks headeren, men på sikt vil det dukke opp 
                             versjoner som kan hentes ned server side i f.eks .net core prosjektene. Vi er ikke helt der ennå.
                         </p>
+                    </div>
+
+                    <div class="section">
+                        <h2>Header og footer</h2>                            
+                        <p>
+                            For øyeblikket finnes det et felles stylesheet for header og footer, og en javascript for hver av dem.
+                        </p>
+
+                        <h3>Inkludere filer</h3>
+                        <p>
+                            Hvis du ønsker både header og footer kan du inkludere disse scriptene i header-taggen på siden du bygger.
+                        </p>
+<pre>
+<code>
+&lt;link href="https://design.artsdatabanken.no/style/header-footer.css" rel="stylesheet" /&gt;
+&lt;script src="https://design.artsdatabanken.no/script/header.js"&gt;&lt;/script&gt; 
+&lt;script src="https://design.artsdatabanken.no/script/footer.js"&gt;&lt;/script&gt;  
+&lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+</code>
+</pre>
+
+
                     </div>
                  
                                        

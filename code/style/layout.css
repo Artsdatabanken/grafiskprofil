@@ -273,3 +273,10 @@ p{
     border-bottom:none;
 }
 
+.pre{
+    font-size: 10pt;
+    color: white;
+    background: #4c4a48;
+    width: 100%;
+    overflow: scroll;
+}
