@@ -321,6 +321,13 @@ footer table td:first-child {
 
 @media only screen and (max-width: 400px){
 
+    footer table td:first-child {
+        text-align: left;
+        padding-right: 0px;
+        font-size: 11pt;
+        margin-top: 10px;
+    }
+
     footer td{
         display: block;
         box-sizing: border-box;

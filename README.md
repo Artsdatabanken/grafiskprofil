@@ -8,7 +8,8 @@ Prosjekt som tar deler av dette i bruk:
 - https://github.com/Artsdatabanken/doi-frontend
 - https://github.com/Artsdatabanken/assessments-frontend
 
-# DEPLOYMENT av Grafisk Profil og Templates for Artsdatabanken
+# Deployment av Templates for Artsdatabanken
+- sees nevnt på https://design.artsdatabanken.no/
 - deployes på innsjekk til master.
 - Kjører kun én versjon og denne kjører på testserver.
 
