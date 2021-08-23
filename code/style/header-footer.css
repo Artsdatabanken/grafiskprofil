@@ -306,6 +306,16 @@ footer table td:first-child {
     vertical-align: top;
 }
 
+@media only screen and (max-width: 400px){
+
+    footer{
+        font-size: 10pt;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+}
+
 /* Adjust injected footer/headerelements */
 
 @media only screen and (min-width: 766px){
