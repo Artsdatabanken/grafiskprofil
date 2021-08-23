@@ -8,6 +8,8 @@ Prosjekt som tar deler av dette i bruk:
 - https://github.com/Artsdatabanken/doi-frontend
 - https://github.com/Artsdatabanken/assessments-frontend
 
+# DEPLOYMENT av Grafisk Profil og Templates for Artsdatabanken
+- deployes på innsjekk til master.
 
 # Grafisk Profil - prosjektet for Artsdatabanken
 Målet med dette prosjektet er å samle informasjon om den grafiske profilen og hvordan den er tatt i bruk, og å videreutvikle den /endre den på sikt så den er mer nyttig ovenfor web.

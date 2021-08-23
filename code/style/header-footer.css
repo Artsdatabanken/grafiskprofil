@@ -314,6 +314,10 @@ footer table td:first-child {
         padding-right:10px;
     }
 
+    footer td{
+        padding:0px;
+    }
+
 }
 
 /* Adjust injected footer/headerelements */
