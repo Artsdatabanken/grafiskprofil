@@ -326,7 +326,6 @@ footer table td:first-child {
 @media only screen and (max-width: 400px){
 
     footer{
-        font-size: 10pt;
         padding-left:10px;
         padding-right:10px;
     }
@@ -385,6 +384,15 @@ footer table td:first-child {
         margin-bottom: 1em;
     }
 }
+
+@media only screen and (max-width: 400px){
+    .col-sm-4, 
+    .col-sm-6 {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+}
+
 
 .main-content,
 .main{
