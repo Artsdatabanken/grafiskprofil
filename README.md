@@ -10,6 +10,7 @@ Prosjekt som tar deler av dette i bruk:
 
 # DEPLOYMENT av Grafisk Profil og Templates for Artsdatabanken
 - deployes på innsjekk til master.
+- Kjører kun én versjon og denne kjører på testserver.
 
 # Grafisk Profil - prosjektet for Artsdatabanken
 Målet med dette prosjektet er å samle informasjon om den grafiske profilen og hvordan den er tatt i bruk, og å videreutvikle den /endre den på sikt så den er mer nyttig ovenfor web.
