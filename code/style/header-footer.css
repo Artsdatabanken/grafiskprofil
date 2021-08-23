@@ -317,8 +317,21 @@ footer table td:first-child {
     footer td{
         padding:0px;
     }
-
 }
+
+@media only screen and (max-width: 400px){
+
+    footer td{
+        display: block;
+        box-sizing: border-box;
+        clear: both;
+        word-break: break-word;
+        hyphens: auto;
+    }
+}
+
+
+
 
 /* Adjust injected footer/headerelements */
 
