@@ -39,6 +39,13 @@ p{
 /* LAYOUT */
 
 
+/* 990 px: PADDE: articles fullwidth */¨
+/* 768 px: MOBILE: articles max collapse */
+/* 527 px: SMALL MOBILE */
+/* 400 px: Super-tiny */
+
+
+
 /* Outer container and its background */
 .main {
     background: #f9f9f9;
