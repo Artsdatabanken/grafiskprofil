@@ -62,7 +62,7 @@ P.S. Målet er ikke å lage standardobjekter, da det benyttes mye forskjellig te
 3) Kommenter og legg til issues så mye du vil. Helene har satt opp en mal for nye issues, så fyll inn den om du vil ha litt hjelp til hva som er nyttig
 
 ## Hvem kan gjøre hva?
-- I utgangspunktet er det eneste som kreves for å kommentere og redigere å ha en GitHub en bruker 
+- I utgangspunktet er det eneste som kreves for å kommentere og redigere å ha en GitHub bruker 
     - Mulig det ligger begrensinger på høyere nivå som krever at du er medlem av vår gruppe, isåfall: si i fra så fikser vi.
 - Helene begynner arbeidet med å legge til og utrede ting, men dere er alle hjertelige velkomne til å hjelpe til. Hun kommer til å se over og legge til kilder uansett. 
 - Åshild bidrar med kunnskap om design og grafiske element og tidligere profil (etterhvert)
