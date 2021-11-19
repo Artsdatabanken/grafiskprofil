@@ -1,0 +1,12 @@
+.header {
+    background: #901616;
+}
+
+.header .menuitems {
+    background: #751111;
+}
+
+.menuitems:active, .menuitems:focus, .menuitems:hover {
+    background: #ededed;
+    color: black;
+}
