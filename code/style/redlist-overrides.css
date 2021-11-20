@@ -13,3 +13,6 @@ body > .navbar li.dropdown,
     color: black;
 }
 
+body > .navbar li.dropdown:nth-child(2){
+    color:transparent;
+}
