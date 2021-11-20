@@ -1,7 +1,9 @@
+.navbar-inverse,
 .header {
     background: #901616;
 }
 
+body > .navbar li.dropdown,
 .header .menuitems {
     background: #751111;
 }
@@ -10,3 +12,4 @@
     background: #ededed;
     color: black;
 }
+
