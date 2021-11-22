@@ -1,33 +1,33 @@
 
+.navbar-inverse,
+.header {
+    background: #901616;
+}
 
-    @media screen and (max-width: 992px) {
-    .navbar-inverse,
-    .header {
-        background: #901616;
-    }
+body > .navbar li.dropdown,
+.header .menuitems {
+    background: #751111;
+}
 
-    body > .navbar li.dropdown,
-    .header .menuitems {
-        background: #751111;
-    }
+.menuitems:active, .menuitems:focus, .menuitems:hover {
+    background: #ededed;
+    color: black;
+}
 
-    .menuitems:active, .menuitems:focus, .menuitems:hover {
-        background: #ededed;
-        color: black;
-    }
+body > .navbar li.dropdown:nth-child(2){
+    color:transparent;
+    border-color:transparent;
+}
 
-    body > .navbar li.dropdown:nth-child(2){
-        color:transparent;
-        border-color:transparent;
-    }
+.navbar-inverse .navbar-toggle{
+    border-color:transparent;
+}
 
-    .navbar-inverse .navbar-toggle{
-        border-color:transparent;
-    }
+nav.navbar{
+    margin-bottom: 53px;
+}
 
-    nav.navbar{
-        margin-bottom: 53px;
-    }
+@media screen and (max-width: 992px) {
 
     #navbar-content.affix-top{
         background: #890d0d !important;
@@ -82,10 +82,10 @@
         left: auto;
         top: 54px;
     }
-  }
+}
 
-  @media screen and (max-width: 283px) {
+@media screen and (max-width: 283px) {
     #navbar-content.affix-top {
         margin-top: -29.5px;
     }
-  }
+}
