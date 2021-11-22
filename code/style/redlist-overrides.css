@@ -23,11 +23,18 @@ body > .navbar li.dropdown:nth-child(2){
     border-color:transparent;
 }
 
-nav.navbar{
-    margin-bottom: 53px;
-}
-
 @media screen and (max-width: 992px) {
+    nav.navbar{
+        margin-bottom: 53px;
+    }
+
+    #main-content{
+        margin-top: -53px;
+    }
+
+    .container-fluid .row:first-of-type{
+        height:0px;
+    }
 
     #navbar-content.affix-top{
         background: #890d0d !important;
@@ -50,6 +57,15 @@ nav.navbar{
 
     #navbar-content > .container-fluid > .hidden-lg.hidden-md{
         background-color: #880c0c !important;
+    }
+
+    .navbar-default .navbar-nav > li > a,
+    .navbar-default .navbar-nav > .active > a, 
+    .navbar-default .navbar-nav > .active > a:hover, 
+    .navbar-default .navbar-nav > .active > a:focus,
+    #navbar-content .btn-link,
+    #navbar-content > .container-fluid > .hidden-lg.hidden-md
+    {
         color:white;
     }
 
@@ -57,7 +73,6 @@ nav.navbar{
         background:transparent;
         margin:0;
         margin-left: calc(100vw - 62px);    
-        color: white;
     }
 
     #navbar-content .glyphicon-menu-hamburger::before {
