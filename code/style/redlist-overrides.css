@@ -15,4 +15,9 @@ body > .navbar li.dropdown,
 
 body > .navbar li.dropdown:nth-child(2){
     color:transparent;
+    border-color:transparent;
+}
+
+.navbar-inverse .navbar-toggle{
+    border-color:transparent;
 }
