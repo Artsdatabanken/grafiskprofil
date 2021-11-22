@@ -36,6 +36,7 @@ nav.navbar{
     box-sizing: border-box;
     width: 100vw;
     padding-left: 15px;
+    overflow: hidden;
 }
 
 #navbar-content > .container-fluid{
@@ -54,17 +55,20 @@ nav.navbar{
     margin-left: calc(100vw - 62px);    
 }
 
-
-#navbar-content .btn-link .glyphicon{
-    content:"Om rødlista";
-    color:white;
-    padding: 6px 12px;
-    font-size: 15px;
-    line-height: 1.42857143;
+#navbar-content .glyphicon-menu-hamburger::before {
+    content: "Om Rødlista";
     font-family: "Roboto condensed";
+    margin-left: -60px;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#navbar-content .glyphicon-menu-hamburger{
+    content:" ";
 }
 
 
 .navbar-default .navbar-toggle {
    display:none;
 }
+
