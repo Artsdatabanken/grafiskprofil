@@ -26,9 +26,20 @@ nav.navbar{
     margin-bottom: 53px;
 }
 
-#navbar-content{
-    background:#890d0d;
-    color:white;
+#navbar-content.affix-top{
+    position: absolute;
+    background: #890d0d;
+    top: -104px;
+    border-color: transparent;
+    left: -15px;
+    right: -15px;
+    max-width: 100vw;
+    box-sizing: border-box;
+}
+
+#navbar-content > .container-fluid{
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 #navbar-content > .container-fluid > .hidden-lg.hidden-md{
