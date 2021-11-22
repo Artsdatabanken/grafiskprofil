@@ -50,15 +50,21 @@ nav.navbar{
 
 #navbar-content .btn-link {
     background:transparent;
-    color:white;
-    margin-left: calc(100% - 62px);
+    margin:0;
+    margin-left: calc(100vw - 62px);    
 }
 
-.navbar-default .navbar-toggle {
+
+#navbar-content .btn-link .glyphicon{
     content:"Om rødlista";
     color:white;
     padding: 6px 12px;
     font-size: 15px;
     line-height: 1.42857143;
     font-family: "Roboto condensed";
+}
+
+
+.navbar-default .navbar-toggle {
+   display:none;
 }
