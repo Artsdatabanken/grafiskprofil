@@ -27,14 +27,15 @@ nav.navbar{
 }
 
 #navbar-content.affix-top{
-    position: absolute;
-    background: #890d0d;
-    top: -104px;
+    background: #890d0d !important;
+    top: -96px;
     border-color: transparent;
     left: -15px;
     right: -15px;
     max-width: 100vw;
     box-sizing: border-box;
+    width: 100vw;
+    padding-left: 15px;
 }
 
 #navbar-content > .container-fluid{
@@ -43,11 +44,21 @@ nav.navbar{
 }
 
 #navbar-content > .container-fluid > .hidden-lg.hidden-md{
-    background:transparent;
+    background-color: #880c0c !important;
     color:white;
 }
 
 #navbar-content .btn-link {
     background:transparent;
     color:white;
+    margin-left: calc(100% - 62px);
+}
+
+.navbar-default .navbar-toggle {
+    content:"Om rødlista";
+    color:white;
+    padding: 6px 12px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    font-family: "Roboto condensed";
 }
