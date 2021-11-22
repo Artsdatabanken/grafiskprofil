@@ -1,87 +1,91 @@
-.navbar-inverse,
-.header {
-    background: #901616;
-}
 
-body > .navbar li.dropdown,
-.header .menuitems {
-    background: #751111;
-}
 
-.menuitems:active, .menuitems:focus, .menuitems:hover {
-    background: #ededed;
-    color: black;
-}
+    @media screen and (max-width: 992px) {
+    .navbar-inverse,
+    .header {
+        background: #901616;
+    }
 
-body > .navbar li.dropdown:nth-child(2){
-    color:transparent;
-    border-color:transparent;
-}
+    body > .navbar li.dropdown,
+    .header .menuitems {
+        background: #751111;
+    }
 
-.navbar-inverse .navbar-toggle{
-    border-color:transparent;
-}
+    .menuitems:active, .menuitems:focus, .menuitems:hover {
+        background: #ededed;
+        color: black;
+    }
 
-nav.navbar{
-    margin-bottom: 53px;
-}
+    body > .navbar li.dropdown:nth-child(2){
+        color:transparent;
+        border-color:transparent;
+    }
 
-#navbar-content.affix-top{
-    background: #890d0d !important;
-    top: -96px;
-    border-color: transparent;
-    left: -15px;
-    right: -15px;
-    max-width: calc(100% + 30px);
-    box-sizing: border-box;
-    width: calc(100% + 30px);
-    padding-left: 15px;
-    overflow: hidden;
-}
+    .navbar-inverse .navbar-toggle{
+        border-color:transparent;
+    }
 
-#navbar-content > .container-fluid{
-    margin-right: -15px;
-    margin-left: -15px;
-}
+    nav.navbar{
+        margin-bottom: 53px;
+    }
 
-#navbar-content > .container-fluid > .hidden-lg.hidden-md{
-    background-color: #880c0c !important;
-    color:white;
-}
+    #navbar-content.affix-top{
+        background: #890d0d !important;
+        top: -96px;
+        border-color: transparent;
+        left: -15px;
+        right: -15px;
+        max-width: calc(100% + 30px);
+        box-sizing: border-box;
+        width: calc(100% + 30px);
+        padding-left: 15px;
+        overflow: hidden;
+        height: 53px;
+    }
 
-#navbar-content .btn-link {
-    background:transparent;
-    margin:0;
-    margin-left: calc(100vw - 62px);    
-}
+    #navbar-content > .container-fluid{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
 
-#navbar-content .glyphicon-menu-hamburger::before {
-    content: "Om Rødlista";
-    font-family: "Roboto condensed";
-    margin-left: -60px;
-    font-size: 15px;
-    text-decoration: underline;
-}
+    #navbar-content > .container-fluid > .hidden-lg.hidden-md{
+        background-color: #880c0c !important;
+        color:white;
+    }
 
-#navbar-content .glyphicon-menu-hamburger{
-    content:" ";
-}
+    #navbar-content .btn-link {
+        background:transparent;
+        margin:0;
+        margin-left: calc(100vw - 62px);    
+        color: white;
+    }
 
-#navbar-content .navbar-toggle {
-   display:none;
-}
+    #navbar-content .glyphicon-menu-hamburger::before {
+        content: "Om Rødlista";
+        font-family: "Roboto condensed";
+        margin-left: -60px;
+        font-size: 15px;
+        text-decoration: underline;
+    }
 
-#navbar-content .navbar-header::before {
-    content:"Norsk rødliste for arter 2021";
-    font-family: "Roboto condensed";
-    margin-left: -60px;
-    font-size: 15px;
-    text-decoration: underline;
-}
+    #navbar-content .glyphicon-menu-hamburger{
+        content:" ";
+    }
 
-.open > .dropdown-menu {
-    left:auto;
-    right: 23px;
-    left: auto;
-    top: 54px;
-}
+    #navbar-content .navbar-toggle {
+    display:none;
+    }
+
+    .open > .dropdown-menu {
+        left:auto;
+        right: 23px;
+        left: auto;
+        top: 54px;
+    }
+  }
+
+  @media screen and (max-width: 283px) {
+    #navbar-content.affix-top {
+        margin-top: -29.5px;
+    }
+  }
