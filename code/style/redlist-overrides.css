@@ -21,3 +21,22 @@ body > .navbar li.dropdown:nth-child(2){
 .navbar-inverse .navbar-toggle{
     border-color:transparent;
 }
+
+nav.navbar{
+    margin-bottom: 53px;
+}
+
+#navbar-content{
+    background:#890d0d;
+    color:white;
+}
+
+#navbar-content > .container-fluid > .hidden-lg.hidden-md{
+    background:transparent;
+    color:white;
+}
+
+#navbar-content .btn-link {
+    background:transparent;
+    color:white;
+}
