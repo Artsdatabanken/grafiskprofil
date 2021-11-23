@@ -17,7 +17,7 @@ body > .navbar li.dropdown,
 
 body > .navbar li.dropdown:nth-child(2){
     color:transparent;
-    border-color:transparent;
+    border-color:#901616;
 }
 
 .navbar-inverse .navbar-toggle{
@@ -28,7 +28,6 @@ body > .navbar li.dropdown:nth-child(2){
     #navbar-content .btn-link {
         margin-left: calc(100vw - 85px);
     }
-
 }
 
 @media screen and (max-width: 992px) {
@@ -104,6 +103,14 @@ body > .navbar li.dropdown:nth-child(2){
         right: 23px;
         left: auto;
         top: 54px;
+    }
+}
+
+
+
+@media only screen and (max-width: 765px) {   
+    .header-searchfield.closed button {
+        background: transparent;
     }
 }
 
