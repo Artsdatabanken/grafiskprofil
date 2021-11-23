@@ -24,6 +24,9 @@ body > .navbar li.dropdown:nth-child(2){
     border-color:transparent;
 }
 
+/*
+
+
 @media screen and (min-width: 993px) {
     #navbar-content .btn-link {
         margin-left: calc(100vw - 85px);
@@ -53,7 +56,8 @@ body > .navbar li.dropdown:nth-child(2){
         box-sizing: border-box;
         width: calc(100% + 30px);
         padding-left: 15px;
-        overflow: hidden;
+        overflow-x:  hidden;
+        overflow-y:visible;
         height: 53px;
     }
 
@@ -79,15 +83,24 @@ body > .navbar li.dropdown:nth-child(2){
     #navbar-content .btn-link {
         background:transparent;
         margin:0;
-        margin-left: calc(100vw - 62px);    
+        margin-left: calc(100vw - 130px); 
+        width:100px;
+    }
+    
+    #navbar-content .btn-link:hover {
+        background:darkred;
     }
 
     #navbar-content .glyphicon-menu-hamburger::before {
         content: "Om Rødlista";
-        font-family: "Roboto condensed";
-        margin-left: -60px;
+        font-family: "Roboto condensed";        
         font-size: 15px;
         text-decoration: underline;
+    }
+
+    #navbar-content .glyphicon-menu-hamburger::before:hover{
+        background-color: #ededed;
+        color: #4C4A48;
     }
 
     #navbar-content .glyphicon-menu-hamburger{
@@ -99,10 +112,9 @@ body > .navbar li.dropdown:nth-child(2){
     }
 
     .open > .dropdown-menu {
-        left:auto;
-        right: 23px;
+        right: 11px;
         left: auto;
-        top: 54px;
+        top: 41px;
     }
 }
 
@@ -119,3 +131,5 @@ body > .navbar li.dropdown:nth-child(2){
         margin-top: -29.5px;
     }
 }
+
+*/
