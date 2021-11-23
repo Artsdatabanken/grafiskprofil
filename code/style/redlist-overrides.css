@@ -16,7 +16,6 @@ body > .navbar li.dropdown,
 }
 
 body > .navbar li.dropdown:nth-child(2){
-    color:transparent;
     border-color:#901616;
 }
 
@@ -32,46 +31,41 @@ body > .navbar li.dropdown:nth-child(2){
     }
 }
 
-/*
-
-
 @media screen and (max-width: 992px) {
-    nav.navbar{
-        margin-bottom: 53px;
-    }
-
-    #main-content{
-        margin-top: -53px;
-    }
-
-    .container-fluid .row:first-of-type{
-        height:0px;
-    }
-
-    #navbar-content.affix-top{
-        background: #890d0d !important;
-        top: -96px;
-        border-color: transparent;
-        left: -15px;
-        right: -15px;
-        max-width: calc(100% + 30px);
-        box-sizing: border-box;
-        width: calc(100% + 30px);
-        padding-left: 15px;
-        overflow-x:  hidden;
-        overflow-y:visible;
-        height: 53px;
-    }
-
+    
     #navbar-content > .container-fluid{
         margin-right: -15px;
         margin-left: -15px;
     }
-
+    
     #navbar-content > .container-fluid > .hidden-lg.hidden-md{
         background-color: #880c0c !important;
     }
-
+    
+    
+    #navbar-content .navbar-header .nav {
+        margin-right: 27px !important;
+        margin-left: auto;
+        float: right;   
+        width: 100px;
+    }
+    
+     .open > .dropdown-menu {
+        right: 0;
+        left: auto;
+        top: 41px;
+    }
+    
+    #navbar-content.affix-top{
+        left: -15px;
+        right: -15px;
+        width: calc(100% + 30px);
+        border:none;
+        box-sizing: border-box;
+        padding-left: 15px;
+        top: -96px;
+    }
+    
     .navbar-default .navbar-nav > li > a,
     .navbar-default .navbar-nav > .active > a, 
     .navbar-default .navbar-nav > .active > a:hover, 
@@ -81,48 +75,34 @@ body > .navbar li.dropdown:nth-child(2){
     {
         color:white;
     }
-
-    #navbar-content .btn-link {
-        background:transparent;
-        margin:0;
-        margin-left: calc(100vw - 130px); 
-        width:100px;
+    
+     #main-content{
+        margin-top: -53px;
     }
     
-    #navbar-content .btn-link:hover {
-        background:darkred;
+     nav.navbar{
+        margin-bottom: 53px;
     }
-
+    
+    #navbar-content .btn-link{
+        width: 100%;
+        display: block;
+    }
+    
+    #navbar-content .btn-link:hover{
+        cursor: pointer;
+        background:white;
+        color:black;
+    }
+    
     #navbar-content .glyphicon-menu-hamburger::before {
         content: "Om Rødlista";
         font-family: "Roboto condensed";        
         font-size: 15px;
         text-decoration: underline;
-    }
-
-    #navbar-content .glyphicon-menu-hamburger::before:hover{
-        background-color: #ededed;
-        color: #4C4A48;
-    }
-
-    #navbar-content .glyphicon-menu-hamburger{
-        content:" ";
-    }
-
-    #navbar-content .navbar-toggle {
-    display:none;
-    }
-
-    .open > .dropdown-menu {
-        right: 11px;
-        left: auto;
-        top: 41px;
-    }
+    } 
+    
 }
-
-
-*/
-
 
 
 @media only screen and (max-width: 765px) {   
