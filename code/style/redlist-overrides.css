@@ -5,7 +5,8 @@
 }
 
 body > .navbar li.dropdown,
-.header .menuitems {
+.header .menuitems,
+.header-searchfield.closed button {
     background: #751111;
 }
 
@@ -21,6 +22,13 @@ body > .navbar li.dropdown:nth-child(2){
 
 .navbar-inverse .navbar-toggle{
     border-color:transparent;
+}
+
+@media screen and (min-width: 993px) {
+    #navbar-content .btn-link {
+        margin-left: calc(100vw - 85px);
+    }
+
 }
 
 @media screen and (max-width: 992px) {
