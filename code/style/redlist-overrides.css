@@ -24,7 +24,6 @@ body > .navbar li.dropdown:nth-child(2){
     border-color:transparent;
 }
 
-/*
 
 
 @media screen and (min-width: 993px) {
@@ -32,6 +31,9 @@ body > .navbar li.dropdown:nth-child(2){
         margin-left: calc(100vw - 85px);
     }
 }
+
+/*
+
 
 @media screen and (max-width: 992px) {
     nav.navbar{
@@ -119,6 +121,9 @@ body > .navbar li.dropdown:nth-child(2){
 }
 
 
+*/
+
+
 
 @media only screen and (max-width: 765px) {   
     .header-searchfield.closed button {
@@ -131,5 +136,3 @@ body > .navbar li.dropdown:nth-child(2){
         margin-top: -29.5px;
     }
 }
-
-*/
