@@ -54,6 +54,7 @@ body > .navbar li.dropdown:nth-child(2){
         right: 0;
         left: auto;
         top: 41px;
+        max-width: 90vw;
     }
     
     #navbar-content.affix-top{
