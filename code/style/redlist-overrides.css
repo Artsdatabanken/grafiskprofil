@@ -27,7 +27,7 @@ body > .navbar li.dropdown:nth-child(2){
 
 @media screen and (min-width: 993px) {
     #navbar-content .btn-link {
-        margin-left: calc(100vw - 85px);
+        /*margin-left: calc(100vw - 85px);*/
     }
 }
 
