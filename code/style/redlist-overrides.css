@@ -6,6 +6,8 @@
 
 body > .navbar li.dropdown,
 .header .menuitems,
+.header-searchfield,
+.header-searchfield .menubutton,
 .header-searchfield.closed button {
     background: #751111;
 }
