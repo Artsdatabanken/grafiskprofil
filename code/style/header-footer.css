@@ -27,6 +27,7 @@ body {
   text-align: center;
   position: relative;
   z-index: 3;
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 766px) {
