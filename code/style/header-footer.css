@@ -1,424 +1,420 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap");
 
 html {
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-body{
-    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+body {
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* HEADER */
 .header {
-    width: 100%;
-    background: #4c4a48;
-    display:inline-block;
-    height: 50px;
+  width: 100%;
+  background: #4c4a48;
+  display: inline-block;
+  height: 50px;
 }
 
 .header-logo {
-    background: white;
-    height: 100%;
-    width: 200px;
-    padding-top: 10px;
-    margin-left: 25px;
-    display: block;
-    text-align: center;
-    position: relative;
-    z-index:3;
+  background: white;
+  height: 100%;
+  width: 200px;
+  padding-top: 10px;
+  margin-left: 25px;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
-@media only screen and (max-width: 766px){
-
-    .header-logo {
-        background: none;
-    }
-
+@media only screen and (max-width: 766px) {
+  .header-logo {
+    background: none;
+  }
 }
 
-@media only screen and (max-width: 400px){
-
-    .header-logo {
-        margin-left: 15px;
-        text-align: left;
-    }
-
+@media only screen and (max-width: 400px) {
+  .header-logo {
+    margin-left: 15px;
+    text-align: left;
+  }
 }
 
-.header-logo img{
-    width: 150px;
+.header-logo img {
+  width: 150px;
 }
 
 /* HEADER */
 
-.page-header{
-    margin-top: .5em;
-    border-bottom: 1px solid #eee;
-    margin-bottom:21px;
-    padding-bottom:10px;
+.page-header {
+  margin-top: 0.5em;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 21px;
+  padding-bottom: 10px;
 }
 
 .page-header h1 {
-    line-height: 1.5;
-    font-size: 40px;
+  line-height: 1.5;
+  font-size: 40px;
 }
 
 @media only screen and (max-width: 740px) {
-    .page-header h1 {
-        font-size: 30px;
-        padding-bottom:0px;
-    }
+  .page-header h1 {
+    font-size: 30px;
+    padding-bottom: 0px;
+  }
 }
 
-.page-header h2{
-    font-size: 26px;
-    font-weight: normal;
-    margin-top:0px;
+.page-header h2 {
+  font-size: 26px;
+  font-weight: normal;
+  margin-top: 0px;
 }
 
 @media only screen and (max-width: 740px) {
-    .page-header h2 {
-        font-size: 19.5px;
-    }
+  .page-header h2 {
+    font-size: 19.5px;
+  }
 }
-
 
 /* HEADER MENU*/
 
-nav{
-    display: inline-block;
-    top: 0;
-    position: absolute;
-    right: 20px;
+nav {
+  display: inline-block;
+  top: 0;
+  position: absolute;
+  right: 20px;
 }
 
-.menuitems{
-    display:inline-block;
-    height:50px;
-    background-color: #3d3b3a;
-    padding: 15px;
-    padding-bottom: 14px;
-    padding-top: 1em;
-    font-family: "Roboto Condensed";
-    color:white;
-    text-decoration: underline;
-    margin-right:2px;
-    position: relative;
-    border:0;
-    font-size: 15px;
+.menuitems {
+  display: inline-block;
+  height: 50px;
+  background-color: #3d3b3a;
+  padding: 15px;
+  padding-bottom: 14px;
+  padding-top: 1em;
+  font-family: "Roboto Condensed";
+  color: white;
+  text-decoration: underline;
+  margin-right: 2px;
+  position: relative;
+  border: 0;
+  font-size: 15px;
 }
 
 .menuitems:active,
 .menuitems:focus,
-.menuitems:hover{
-    background:#ededed;
-    cursor: pointer;
-    color:#3d3b3a;
+.menuitems:hover {
+  background: #ededed;
+  cursor: pointer;
+  color: #3d3b3a;
 }
 
-.menuitems .dropicon{
-    font-weight: 400;
-    font-size: 15px;
-    font-style: normal;
-    vertical-align: bottom;
-    width:10px;
+.menuitems .dropicon {
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+  vertical-align: bottom;
+  width: 10px;
 }
 
 .englishspacer {
-    width: 53px;
-    height:20px;
-    display: inline-block;
+  width: 53px;
+  height: 20px;
+  display: inline-block;
 }
 
-.dropdown{
-    font-size: 15px;
-    text-align: left;
-    background:#3d3b3a;
-    color:white;
-    padding: 5px 0;
-    font-size: 15px;
-    text-align: left;
+.dropdown {
+  font-size: 15px;
+  text-align: left;
+  background: #3d3b3a;
+  color: white;
+  padding: 5px 0;
+  font-size: 15px;
+  text-align: left;
+  list-style-type: none;
+  margin: 0;
+  list-style-type: none;
+  margin: 0;
 }
 
 .dropdown li a {
-    padding: 3px 20px;
-    clear: both;
-    font-weight: 400;
-    line-height: 1.42857143;
-    color: white;
-    white-space: nowrap;
-    font-size: 16px;
-    font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
-    margin: 8px 0;
-    display: block;
-    text-decoration: none;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: 400;
+  line-height: 1.42857143;
+  color: white;
+  white-space: nowrap;
+  font-size: 16px;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 8px 0;
+  display: block;
+  text-decoration: none;
 }
 
-@media only screen and (max-width: 766px){
-    .dropdown{
-        /*Since content is inside a padded box and we want to keep clickability...*/
-        margin-top: 15px;
-        margin-right: -15px;
-        margin-left: -15px;
-        margin-bottom: -15px;
-    }
+@media only screen and (max-width: 766px) {
+  .dropdown {
+    /*Since content is inside a padded box and we want to keep clickability...*/
+    margin-top: 15px;
+    margin-right: -15px;
+    margin-left: -15px;
+    margin-bottom: -15px;
+  }
 }
 
-@media only screen and (min-width: 766px){
-    .dropdown{
-        position:absolute;
-        top:50px;
-        right:0px;
-        border: 1px solid rgba(0,0,0,.15);
-        box-shadow: 0 6px 12px rgba(0,0,0,.175);
-        min-width: 160px;    
-        background-color: #fff;
-        z-index: 1;
-    }
+@media only screen and (min-width: 766px) {
+  .dropdown {
+    position: absolute;
+    top: 50px;
+    right: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    min-width: 160px;
+    background-color: #fff;
+    z-index: 1;
+  }
 
-    .dropdown li a {
-        color: #333333;
-        font-weight: 700;
-    }
+  .dropdown li a {
+    color: #333333;
+    font-weight: 700;
+  }
 }
 
 .dropdown li a:active,
 .dropdown li a:focus,
-.dropdown li a:hover{
-    color: #de8718;
-    background-color: #f5f5f5;
+.dropdown li a:hover {
+  color: #de8718;
+  background-color: #f5f5f5;
 }
 
-.dropdown li a span{
-    font-weight: 400;
-    font-size: 15px;
-    color: #4c4a48;
-    font-style: normal;
-    display: block;
+.dropdown li a span {
+  font-weight: 400;
+  font-size: 15px;
+  color: #4c4a48;
+  font-style: normal;
+  display: block;
 }
 
-@media only screen and (max-width: 766px){
-    .dropdown li a span{
-        display:none;
-    }
+@media only screen and (max-width: 766px) {
+  .dropdown li a span {
+    display: none;
+  }
 }
 
-
-.dropdown li a b{
-    font-size:10pt;
-    vertical-align: middle;
+.dropdown li a b {
+  font-size: 10pt;
+  vertical-align: middle;
 }
 
-#Omoss{
-    display:block;
+#Omoss {
+  display: block;
 }
 
-.mobile{display:none}
-.normal{display:inline-block;}
+.mobile {
+  display: none;
+}
+.normal {
+  display: inline-block;
+}
 
-#navbar-mobile{
-    position:absolute;
-    right:20px;
-    top:12px;
-    display:none;
-    color:white;
-    background:none;
-    border:none;
-    font-size: 15pt;
+#navbar-mobile {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  display: none;
+  color: white;
+  background: none;
+  border: none;
+  font-size: 15pt;
 }
 
 #navbar-mobile:hover,
 #navbar-mobile:active,
-#navbar-mobile:focus{
-    cursor:pointer;
-    background:grey;
+#navbar-mobile:focus {
+  cursor: pointer;
+  background: grey;
 }
 
-.show{
-    display:inline-block
+.show {
+  display: inline-block;
 }
-@media only screen and (max-width: 766px){
+@media only screen and (max-width: 766px) {
+  .normal {
+    display: none;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  #navbar-mobile {
+    display: block;
+  }
 
-    .normal{display:none}
-    .mobile{display:inline-block;}
-    #navbar-mobile{
-        display:block;
-    }
+  nav {
+    height: 0px;
+  }
 
-    nav{
-        height:0px;
-    }
-    
-    #headermenu{
-        right:0px;
-        box-sizing: border-box;
-        height:auto;
-        width:100%;
-        padding:15px;
-        padding-top:0px;
-        background:#4c4a48;        
-        z-index: 2;
-        top:50px;
-        border-top:1px solid #3a3837;
-        box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
-    }
+  #headermenu {
+    right: 0px;
+    box-sizing: border-box;
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    padding-top: 0px;
+    background: #4c4a48;
+    z-index: 2;
+    top: 50px;
+    border-top: 1px solid #3a3837;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
 
-    .show{
-        display:block
-    }
+  .show {
+    display: block;
+  }
 
-    .hide{
-        display:none;
-    }
+  .hide {
+    display: none;
+  }
 
-    .menuitems{
-        display:block;
-        width:100%;
-        margin-right:0px;
-        height:auto;
-        min-height:50px;
-        margin-left:0px;
-        text-align: left;  
-    }
-
-}
-
-@media only screen and (max-width: 400px){
-
-    #navbar-mobile{
-        z-index: 100;
-        right: 12px;
-    }
+  .menuitems {
+    display: block;
+    width: 100%;
+    margin-right: 0px;
+    height: auto;
+    min-height: 50px;
+    margin-left: 0px;
+    text-align: left;
+  }
 }
 
-
+@media only screen and (max-width: 400px) {
+  #navbar-mobile {
+    z-index: 100;
+    right: 12px;
+  }
+}
 
 /* FOOTER */
 
-footer{
-    width: 100%;
-    background: #4c4a48;
-    display:inline-block;
-    color:white;
-    border-top: 3px solid #cecfd1;
-    padding-top: 1em;
-    padding-bottom: 20px;
-    font-family: "Roboto Condensed";
-    padding-left: 45px;
-    padding-right: 45px;
-    font-size: 15px;
+footer {
+  width: 100%;
+  background: #4c4a48;
+  display: inline-block;
+  color: white;
+  border-top: 3px solid #cecfd1;
+  padding-top: 1em;
+  padding-bottom: 20px;
+  font-family: "Roboto Condensed";
+  padding-left: 45px;
+  padding-right: 45px;
+  font-size: 15px;
 }
 
-footer a{
-    color:white;
+footer a {
+  color: white;
 }
 
 footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 10.5px;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 10.5px;
 }
 
 footer table td:first-child {
-    text-align: right;
-    padding-right: 1em;
-    vertical-align: top;
+  text-align: right;
+  padding-right: 1em;
+  vertical-align: top;
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 
-    footer{
-        padding-left:10px;
-        padding-right:10px;
-    }
-
-    footer td{
-        padding:0px;
-    }
+  footer td {
+    padding: 0px;
+  }
 }
 
-@media only screen and (max-width: 400px){
+@media only screen and (max-width: 400px) {
+  footer table td:first-child {
+    text-align: left;
+    padding-right: 0px;
+    font-size: 11pt;
+    margin-top: 10px;
+  }
 
-    footer table td:first-child {
-        text-align: left;
-        padding-right: 0px;
-        font-size: 11pt;
-        margin-top: 10px;
-    }
-
-    footer td{
-        display: block;
-        box-sizing: border-box;
-        clear: both;
-        word-break: break-word;
-        hyphens: auto;
-    }
+  footer td {
+    display: block;
+    box-sizing: border-box;
+    clear: both;
+    word-break: break-word;
+    hyphens: auto;
+  }
 }
-
 
 /* Adjust injected footer/headerelements */
 
-@media only screen and (min-width: 766px){
+@media only screen and (min-width: 766px) {
+  .row {
+    display: flex;
+  }
+  .col-sm-2,
+  .col-sm-4,
+  .col-sm-6 {
+    flex: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    .row{
-        display:flex;
-    }
-    .col-sm-2,
-    .col-sm-4, 
-    .col-sm-6 {
-        flex:1;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .col-sm-6 {
-        flex:2;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .col-sm-6 {
+    flex: 2;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
-@media only screen and (max-width: 766px){
-    .col-sm-4, 
-    .col-sm-6 {
-        display:block;
-        border-bottom: thin solid #777368;
-        margin-bottom: 1em;
-    }
+@media only screen and (max-width: 766px) {
+  .col-sm-4,
+  .col-sm-6 {
+    display: block;
+    border-bottom: thin solid #777368;
+    margin-bottom: 1em;
+  }
 }
 
-@media only screen and (max-width: 400px){
-    .col-sm-2,
-    .col-sm-4, 
-    .col-sm-6 {
-        padding-left: 9px;
-        padding-right: 9px;
-    }
+@media only screen and (max-width: 400px) {
+  .col-sm-2,
+  .col-sm-4,
+  .col-sm-6 {
+    padding-left: 9px;
+    padding-right: 9px;
+  }
 }
-
 
 .main-content,
-.main{
-    /* 
-    If we have a header and footer, this height is what 
+.main {
+  /*
+    If we have a header and footer, this height is what
     will place the footer at page bottom. The px value shall
     always be the height of the footer + the height of the header.
     */
-    min-height: calc(100vh - 293px);
+  min-height: calc(100vh - 293px);
 }
 
-@media only screen and (max-width: 765px){
-    .main-content,
-    .main{
-        min-height: calc(100vh - 430px);
-    }
+@media only screen and (max-width: 765px) {
+  .main-content,
+  .main {
+    min-height: calc(100vh - 430px);
+  }
 }
 
-@media only screen and (max-width: 527px){
-    .main-content,
-    .main{
-        min-height: calc(100vh - 448px);
-    }
+@media only screen and (max-width: 527px) {
+  .main-content,
+  .main {
+    min-height: calc(100vh - 448px);
+  }
 }
