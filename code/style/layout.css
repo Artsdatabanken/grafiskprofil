@@ -98,11 +98,6 @@ p {
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
-  font-size: 0; /*no spaces between objects*/
-}
-
-.content-placer > * {
-  font-size: initial;
 }
 
 @media only screen and (max-width: 940px) {
@@ -205,14 +200,8 @@ p {
 .mid {
   width: calc(100% - 260px);
   display: inline-block;
-  font-size: 0;
   padding-right: 20px;
 }
-
-.mid > * {
-  font-size: initial;
-}
-
 @media only screen and (max-width: 740px) {
   .mid {
     width: 100%;
