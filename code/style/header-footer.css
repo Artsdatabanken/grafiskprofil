@@ -409,7 +409,7 @@ footer table td:first-child {
 @media only screen and (min-width: 1117px) {
   .main-content,
   .main {
-    min-height: calc(100vh - 254px);
+    min-height: calc(100vh - 253px);
   }
 }
 
@@ -423,6 +423,6 @@ footer table td:first-child {
 @media only screen and (max-width: 527px) {
   .main-content,
   .main {
-    min-height: calc(100vh - 448px);
+    min-height: calc(100vh - 408px);
   }
 }
