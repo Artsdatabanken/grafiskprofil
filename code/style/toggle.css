@@ -89,4 +89,9 @@ input:checked ~ .slider_container .slider:before {
 
 .slider_container {
     min-width: 38px;
+    vertical-align: middle;
+}
+
+.label_text{
+    vertical-align: middle;
 }
