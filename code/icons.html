@@ -29,7 +29,13 @@
 
       <style>
        .change{
-        color:darkred;
+        color:crimson;
+        display: block;
+       }
+
+       .changeTo{
+        color:orangered;
+        display: block;
        }
 
        td{
@@ -199,7 +205,9 @@
           <td>terrain</td>
           <td>Material Icons</td>
           <td>ØkGk</td>
-          <td>Fyllke</td>
+          <td>Fylke
+            <span class="change">Kalles "image-filter-hdr" hos materialdesignicons</span>
+          </td>
         </tr>
         <tr>
           <td><span class="material-icons">open_in_new</span></td>
@@ -213,7 +221,8 @@
           <td>my_location</td>
           <td>Material Icons</td>
           <td>ØkGk</td>
-          <td>Sted-fane</td>
+          <td>Punktinfo: Overskrift/Stedsnavn
+            <span class="change">Står oppramset som crosshairs-gps fra materialdesignicons.com</span></td>
         </tr>
         <tr>
           <td><span class="material-icons-outlined">visibility</span></td>
@@ -262,8 +271,9 @@
           <td>forward (rotert 90 grader)</td>
           <td>Material Icons</td>
           <td>ØkGk</td>
-          <td class="change">Last opp polygon<br/>
-          Denne bør byttes ut, rotasjon er ikke bra, og navn samsvarer ikke med funksjon</td>
+          <td >Last opp polygon
+            <span class="change">Denne bør byttes ut, rotasjon er ikke bra, og navn samsvarer ikke med funksjon</span>
+          </td>
         </tr>
         <tr>
           <td><span class="material-icons" >folder</span></td>
@@ -312,8 +322,9 @@
           <td>cloud_download</td>
           <td>Material Icons</td>
           <td>ØkGk</td>
-          <td class="change">Last ned data. <br/>
-          Denne brukes offisielt til noe annet enn vi gjør, og bør byttes ut da navnet er missvisende</td>
+          <td>Last ned data. 
+            <span class="change">Denne brukes offisielt til noe annet enn vi gjør, og bør byttes ut da navnet er missvisende</span>
+          </td>
         </tr>
         
         <tr>
@@ -321,8 +332,8 @@
           <td>comment</td>
           <td>Material Icons</td>
           <td>ØkGk</td>
-          <td class="change">Innmelding nye kartlag <br/>
-          Betyr noe annet i andre løsninger, og må byttes</td>
+          <td >Innmelding nye kartlag <br/>
+          <span class="change">Betyr noe annet i andre løsninger, og må byttes</span></td>
         </tr>
         <tr>
           <td><span class="material-icons" >menu</span></td>
@@ -332,13 +343,148 @@
           <td>Meny </td>
         </tr>
         <tr>
-          <td><span class="material-icons" >border_left</span></td>
-          <td>border_left</td>
+          <td><span class="material-icons" >grid_on</span></td>
+          <td>grid_on</td>
           <td>Material Icons</td>
           <td>ØkGk</td>
-          <td >Noe i tegnforklaringa? </td>
+          <td>Punktinfo: Overskrift/Stedsnavn <span class="change">Det står markert at denne heter "grid". </span></td>
         </tr>
-        
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,5.32L18,8.69V15.31L12,18.68L6.06,15.34L12,12V5.32M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" />
+        </svg></span></td>
+          <td>hexagon-slice-4</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Polygon <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+         <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M21 11H3V9H21V11M21 13H3V15H21V13Z" />        
+          </svg></span></td>
+          <td>drag-horizontal</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Dra i infoboks <span class="changeTo">Finnes i material-icons, heter "drag_handle" </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M13,13H11V7H13M13,17H11V15H13M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z" />        
+          </svg></span></td>
+          <td>alert-circle</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Tile Error: Får ikke svar <span class="changeTo">Finnes i material-icons, heter "error" </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,16L19.36,10.27L21,9L12,2L3,9L4.63,10.27M12,18.54L4.62,12.81L3,14.07L12,21.07L21,14.07L19.37,12.8L12,18.54Z" />        
+          </svg></span></td>
+          <td>layers</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Kartlag <span class="change"> Må importeres som SVG, finnes kun som outlined i material-icons </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M23,12L20.56,9.22L20.9,5.54L17.29,4.72L15.4,1.54L12,3L8.6,1.54L6.71,4.72L3.1,5.53L3.44,9.21L1,12L3.44,14.78L3.1,18.47L6.71,19.29L8.6,22.47L12,21L15.4,22.46L17.29,19.28L20.9,18.46L20.56,14.78L23,12M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z" />        
+          </svg></span></td>
+          <td>check-decagram</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Bookmark (utkommentert) <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21L3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19.03 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3L20.34,3.03L15,5.1L9,3M8,5.45V17.15L5,18.31V6.46L8,5.45M10,5.47L14,6.87V18.53L10,17.13V5.47M19,5.7V17.54L16,18.55V6.86L19,5.7M7.46,6.3L5.57,6.97V9.12L7.46,8.45V6.3M7.46,9.05L5.57,9.72V11.87L7.46,11.2V9.05M7.46,11.8L5.57,12.47V14.62L7.46,13.95V11.8M7.46,14.55L5.57,15.22V17.37L7.46,16.7V14.55Z" />        
+          </svg></span></td>
+          <td>map-legend</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Tegnforklaring <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" />        
+          </svg></span></td>
+          <td>hexagon-outline</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Omkrets / perimeter <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M12,5.32L18,8.69V15.31L12,18.68L6,15.31V8.69L12,5.32M21,16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V7.5C3,7.12 3.21,6.79 3.53,6.62L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.79,6.79 21,7.12 21,7.5V16.5M12,4.15L5,8.09V15.91L12,19.85L19,15.91V8.09L12,4.15Z" />        
+          </svg></span></td>
+          <td>hexagon-slice-6</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Areal <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M18.41,7.41L17,6L11,12L17,18L18.41,16.59L13.83,12L18.41,7.41M12.41,7.41L11,6L5,12L11,18L12.41,16.59L7.83,12L12.41,7.41Z" />        
+          </svg></span></td>
+          <td>chevron-doble-left</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Lukk sidepanel <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M5.59,7.41L7,6L13,12L7,18L5.59,16.59L10.17,12L5.59,7.41M11.59,7.41L13,6L19,12L13,18L11.59,16.59L16.17,12L11.59,7.41Z" />        
+          </svg></span></td>
+          <td>chevron-doble-right</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Lukk sidepanel <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />        
+          </svg></span></td>
+          <td>chevron-right</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Åpne detaljer <span class="changeTo">Finnes i material-icons, heter "chevron_right" </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M2,6V8H14V6H2M2,10V12H11V10H2M14.17,10.76L12.76,12.17L15.59,15L12.76,17.83L14.17,19.24L17,16.41L19.83,19.24L21.24,17.83L18.41,15L21.24,12.17L19.83,10.76L17,13.59L14.17,10.76M2,14V16H11V14H2Z" />        
+          </svg></span></td>
+          <td>playlist-remove</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td>Ingen favorittkartlag <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M20 12H22V18H20V12M20 20H22V22H20V20M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22C14.3 22 16.3 21.2 18 20V10H21.8C20.9 5.4 16.8 2 12 2M16.2 16.2L11 13V7H12.5V12.2L17 14.9L16.2 16.2Z" />        
+          </svg></span></td>
+          <td>clock-alert</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td> Datalaget kan ta flere minutter å prosessere<span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M17,16H15V22H12V17H8V22H5V16H3L10,10L17,16M6,2L10,6H9V9H7V6H5V9H3V6H2L6,2M18,3L23,8H22V12H19V9H17V12H15.34L14,10.87V8H13L18,3Z" />        
+          </svg></span></td>
+          <td>home-group</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td> Eiendommer kan gi svært mange treff i store polygoner<span class="change"> Må importeres som SVG </span></td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" ><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+            <path fill="currentColor" d="M11 7V13L16.2 16.1L17 14.9L12.5 12.2V7H11M20 12V18H22V12H20M20 20V22H22V20H20M18 20C16.3 21.3 14.3 22 12 22C6.5 22 2 17.5 2 12S6.5 2 12 2C16.8 2 20.9 5.4 21.8 10H19.7C18.8 6.6 15.7 4 12 4C7.6 4 4 7.6 4 12S7.6 20 12 20C14.4 20 16.5 18.9 18 17.3V20Z" />        
+          </svg></span></td>
+          <td>clock-alert-outline</td>
+          <td>Material Design Icons SVG's</td>
+          <td>ØkGk</td>
+          <td> Datalaget kan ta flere minutter å prosessere <span class="change"> Må importeres som SVG </span></td>
+        </tr>
+
       </table>  
 
       <!--Close, Save, Edit, Delete, Cancel-->
