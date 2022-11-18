@@ -248,11 +248,6 @@
           <td>layers</td>
           <td>Kartlag, inkludert bakgrunnskart. Disse bør som regel presenteres sammen. For spesielle caser de må skilles fra hverandre (økgk), må vi tenke ut noe lurt.</td>
         </tr>
-        <tr>
-          <td><span class="material-icons" >polyline</span></td>
-          <td>polyline</td>
-          <td>Tegn Polygon</td>
-        </tr>
         <tr >
           <td><span class="material-icons">save</span></td>
           <td>save</td>
@@ -359,10 +354,70 @@
           <td>sort</td>
           <td>sortere</td>
         </tr>
-       
-
-
+        <tr>
+          <td><span class="material-icons" >help_center</span></td>
+          <td>help_center</td>
+          <td>Brukermanual/Hjelp</td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" >feedback</span></td>
+          <td>feedback</td>
+          <td>Gi tilbakemelding</td>
+        </tr>
+        <tr>
+          <td><span class="material-icons" >chat</span></td>
+          <td>chat</td>
+          <td>Melding/Chat. Her vil det komme mer etterhvert</td>
+        </tr>
       </table>
+
+      
+      <h2>Ikon som trengs å bestilles</h2>
+      
+      <table class="accepted">
+        <tr>
+          <th>Ikon</th>
+          <th>Hva</th>
+          <th>Beskrivelse</th>
+          <th>Applikasjon</th>
+        </tr>
+        <tr>
+          <td>Polygon</td>
+          <td>Tegn/vis polygon i kart</td>          
+          <td>Må være lukket. Bør ha noder. </td>
+          <td>Artskart, ØKGK, Artsobs </td>
+        </tr>
+        <tr>
+          <td>Personlig lokasjon</td>
+          <td>Vis/Skjul mine lokasjoner i kart</td>          
+          <td></td>
+          <td>Artsobs </td>
+        </tr>
+        <tr>
+          <td>Allmenn lokasjon</td>
+          <td>Vis/Skjul allmenne lokasjoner i kart</td>          
+          <td></td>
+          <td>Artsobs </td>
+        </tr>
+        <tr>
+          <td>Fylke</td>
+          <td>Vis fylkesinformasjon</td>          
+          <td>- </td>
+          <td>ØKGK, Artsobs </td>
+        </tr>
+        <tr>
+          <td>Kommune</td>
+          <td>Vis kommunesinformasjon</td>          
+          <td>- </td>
+          <td>ØKGK, Artsobs </td>
+        </tr>
+        <tr>
+          <td>Koordinater ?</td>
+          <td>Vis kommunesinformasjon</td>          
+          <td>? Kan vi bruke et eksisterende? </td>
+          <td>ØKGK, Artsobs </td>
+        </tr>
+        </table>
 
       <h2>Sammenligningstabekll</h2>
       <table>
@@ -762,15 +817,13 @@
 
         <tr><td colspan="100" class="heading">Polygon</td></tr>
 
-        <tr class="chosen">
+        <tr class="rejected">
           <td><span class="material-icons" >polyline</span></td>
           <td>polyline</td>
           <td>Material Icons</td>
           <td></td>
           <td>Tegn Polygon</td>
         </tr>
-
-
         <tr class="rejected">
           <td><img src="https://artskart.artsdatabanken.no/app/content/ikoner/polygon_brown.png"></td>
           <td>polygon_brown</td>
@@ -955,6 +1008,13 @@
         </tr>
 
         <tr><td colspan="100" class="heading">Dokumenatasjon</td></tr>
+        <tr class="chosen">
+          <td><span class="material-icons" >help_center</span></td>
+          <td>help_center</td>
+          <td>Material Icons</td>
+          <td>-</td>
+          <td>Brukermanual/Hjelp</td>
+        </tr>
         <tr class="rejected">
           <td><span class="material-icons" >menu_book</span></td>
           <td>menu_book</td>
@@ -1012,12 +1072,21 @@
           <td>Åpne eksternt vindu</td>
         </tr>
         <tr><td colspan="100" class="heading">Comments</td></tr>
-        <tr class="needsDebate">
+        <tr class="rejected">
           <td><span class="material-icons" >comment</span></td>
           <td>comment</td>
           <td>Material Icons</td>
           <td>ØkGk</td>
           <td >Innmelding nye kartlag <br/>
+          <span class="change">Betyr noe annet i andre løsninger, og må byttes</span></td>
+        </tr>
+
+        <tr class="chosen">
+          <td><span class="material-icons" >feedback</span></td>
+          <td>feedback</td>
+          <td>Material Icons</td>
+          <td>-</td>
+          <td >Innmelding nye kartlag ØKGK <br/>
           <span class="change">Betyr noe annet i andre løsninger, og må byttes</span></td>
         </tr>
         <tr><td colspan="100" class="heading">Sort/Filter etc.</td></tr>
