@@ -7,5 +7,7 @@ branches:
 
 install:
   - sudo apt-get install -y sshpass
+  - npm install -g npm
+  - npm install -g sass
 
 script: bash ./deploy.sh
