@@ -8,14 +8,4 @@ branches:
 install:
   - sudo apt-get install -y sshpass
 
-actions:
-- actions: "Gulp it"
-  working_directory: "/code/style"
-  execute_commands:
-  - "npm install"
-  - "gulp style"
-  - "gulp js"
-  setup_commands:
-  - "npm install -g gulp"
-  
 script: bash ./deploy.sh
