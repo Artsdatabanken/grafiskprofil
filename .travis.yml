@@ -8,4 +8,6 @@ branches:
 install:
   - sudo apt-get install -y sshpass
 
-script: bash ./deploy.sh
+script: 
+  - bash ./compile-sass.sh
+  - bash ./deploy.sh

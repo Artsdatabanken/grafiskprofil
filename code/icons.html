@@ -27,6 +27,13 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet">
 
+      <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css"
+      rel="stylesheet">
+     
+
+
+      
+
       <style>
 
         table{
@@ -100,6 +107,11 @@
           padding-left:10px;
           text-align: left;
         }
+
+        .mdi{
+          font-size:24px;
+        }
+
 
         </style>
 
@@ -373,33 +385,104 @@
       </table>
 
       
-      <h2>Ikon som trengs å bestilles</h2>
+      <h2>Ikon som trengs å bestilles | vedtas | suppleres fra andre kilder</h2>
       
       <table class="accepted">
         <tr>
           <th>Ikon</th>
+          <th>Navn</th>
           <th>Hva</th>
           <th>Beskrivelse</th>
-          <th>Applikasjon</th>
+          <th>Kommentar</th>
         </tr>
         <tr>
-          <td>Polygon</td>
-          <td>Tegn/vis polygon i kart</td>          
-          <td>Må være lukket. Bør ha noder. Øyvind vil ha noe slikt:
+          <td>
+            <span class="mdi mdi-vector-polygon"></span>
+            <span class="mdi mdi-vector-polygon-variant"></span>
+            <span class="mdi mdi-shape-polygon-plus"></span>          
+          </td>
+          <td>
+            mdi-vector-polygon<br/>
+            mdi-vector-polygon-variant<br/>
+            mdi-shape-polygon-plus
+          </td>
+          <td>Tegn/vis polygon i kart</td>  
+          <td>Må være lukket. Bør ha noder.
+            Optimalt sett også av og på... 
+          </td>        
+          <td>Øyvind vil ha noe slikt:
             https://www.flaticon.com/free-icon/polygon_7168063 ish </td>
-          <td>Artskart, ØKGK, Artsobs </td>
         </tr>
         <tr>
-          <td>Personlig lokasjon</td>
-          <td>Vis/Skjul mine lokasjoner i kart</td>          
-          <td></td>
-          <td>Artsobs </td>
+          <td>
+            -
+          </td>
+          <td>Innhenta lokasjon: sted</td>
+          <td>Fra stedsnavn reg</td>          
+          <td>To ikon, et på markør og ett uten.
+              Forslag: markør med fjell på i samme stil som nin-kart?
+          </td>
+          <td>Til skille fra adresse-ikon </td>
         </tr>
         <tr>
-          <td>Allmenn lokasjon</td>
-          <td>Vis/Skjul allmenne lokasjoner i kart</td>          
+          <td>
+            -
+          </td>
+          <td>Innhenta lokasjon: adresse</td>
+          <td>Fra adressereg</td>          
+          <td>To ikon, et på markør og ett uten.
+              Forslag: markør med hus inni, og et hus. som ikke er samme som home.
+          </td>
+          <td>Til skille fra stedsnavn-ikon </td>
+        </tr>
+        <tr>
+          <td>            
+            <span class="mdi mdi-map-marker-account"></span>
+            <span class="mdi mdi-map-marker-account-outline"></span>
+          </td>
+          <td>
+            mdi-map-marker-account<br/>
+            mdi-map-marker-account-outline</td>
+          <td>Personlig lokasjon til nedfallsliste og på kart</td>
+          <td>person på markør til kart, og ... tja, person... uten markør??? til nedfallsliste? det funker ikke Hjelp</td>          
+          <td>
+            Selv om den heter account synes jeg den funker, for det er markører knyttet til min account
+
+          </td>
+        </tr>
+        <tr>
+          <td><span class="mdi mdi-binoculars"></span>
+          </td>
+          <td>mdi-binoculars</td>
+          <td>Allmenn lokasjon i kart + i nedfallslister</td>
+          <td>To ikon. Binoculars kan brukes i nedfallslista.
+            For på kart må det samme kombineres på en markør.
+          </td>    
           <td></td>
-          <td>Artsobs </td>
+        </tr>
+        <tr>
+          <td><span class="mdi mdi-map-marker-star"></span>
+            <span class="mdi mdi-map-marker-star-outline"></span>
+          </td>
+          <td>mdi-map-marker-star<br/>
+            mdi-map-marker-star-outline</td>
+          <td>Favoritt lokasjon</td>
+          <td>Vis/Skjul favoritt lokasjoner i kart</td>   
+          <td>uheldigvis har favoritt i seg selv hjerte, men denne en stjerne...</td>
+        </tr>
+        <tr>
+          <td>
+            <span class="mdi mdi-map-marker-multiple"> </span>
+            <span class="mdi mdi-map-marker-multiple-outline"></span>
+         </td>
+         <td>mdi-map-marker-multiple <br/>
+          mdi-map-marker-multiple-outline
+        </td>
+         <td>Flere observasjoner på samme punkt</td>          
+          <td>Markør med masse punkt (kan denne kombineres med de andre?)</td>
+          
+          <td>her har vi nå bobler med tall. Som gir mening når man velger mellom sites. Men når man har
+            en site med mange observasjoner og det man skal se er observasjonene kan denne være nyttig. </td>
         </tr>
         <tr>
           <td>Fylke</td>

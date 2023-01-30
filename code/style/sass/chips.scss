@@ -1,0 +1,102 @@
+@import 'button-styles';
+
+/**
+ * Chips are based on button-styles, and cannot be used without it.
+ */
+
+$chip-color: $ocean-15;
+$chips-padding-sides: 12px;
+$chips-padding-top-bottom: 14px;
+
+.chips-container {
+    display: inline-block;
+    list-style: none;
+}
+
+.chips {
+    background: $chip-color;
+    width: fit-content;
+    max-width: fit-content;
+    border-color: $chip-color;
+    display: inline-block;
+    position: relative;
+    padding: $chips-padding-sides $chips-padding-top-bottom;
+    min-height: 50px;
+}
+
+$x-button-offset: calc(calc($icon-button-size - $icon-size) / 2);
+
+.chips-close-button {
+    position: absolute;
+    right: $chips-padding-sides;
+    top: calc($chips-padding-top-bottom - $x-button-offset);
+}
+
+$button-placement-padding: calc($icon-button-size + $gap);
+
+$icon-height: 22px;
+
+.chips-text {
+    padding-right: $button-placement-padding;
+    line-height: $icon-height;
+}
+
+.chips .chips-icon,
+.chips .species-group-icon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    margin-right: $base-size;
+}
+
+.chips:not(.mega-chips) .chips-icon,
+.chips:not(.mega-chips) .species-group-icon {
+    width: $icon-height;
+    height: $icon-height;
+    font-size: 18px;
+    border-width: 1px;
+    padding: 1px;
+}
+
+.chips .vernacular-name {
+    display: inline;
+}
+
+// Mega-chips
+// For use for displaying selected species
+
+.mega-chips-container {
+    width: 100%;
+    display: inline-block;
+}
+
+$mega-chips-padding-sides: 16px;
+$mega-chips-padding-top-and-bottom: 21px;
+
+.mega-chips {
+    border: 1px solid $grey-help-text;
+    border-radius: 0;
+    background: $dirt-light;
+    width: 100%;
+    max-width: 100%;
+    padding: $mega-chips-padding-sides $mega-chips-padding-top-and-bottom;
+}
+
+.mega-chips .chips-icon,
+.mega-chips .species-group-icon {
+    float: left;
+    margin-right: $mega-chips-padding-sides !important;
+    // ugly, but the other stylesheet is an inline stylesheet with higher priority
+}
+
+.mega-chips .vernacular-name {
+    display: block;
+}
+
+.mega-chips .name-text {
+    font-family: $font-space;
+}
+
+.mega-chips .chips-close-button {
+    right: $mega-chips-padding-sides;
+    top: calc($mega-chips-padding-top-and-bottom - $x-button-offset);
+}

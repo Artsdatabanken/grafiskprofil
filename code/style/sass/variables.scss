@@ -1,0 +1,163 @@
+// FONT LIBRARY
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$font-chivo: 'Chivo', sans-serif;
+$font-space: 'Space Mono', sans-serif;
+$font-courier: 'Courier Prime', monospace;
+
+// Breakpoints according to figma
+// does not match with the bootstrap-breakpoints...
+// have not yet added overrides.
+
+$mobile-min-size: 320px; // why make this... 
+$mobile-max-size: 480px;
+
+$mobile-rotated-min-size: 481px;
+$mobile-rotated-max-size: 768px;
+
+$tablet-min-size: 768px;
+$tablet-max-size: 1026px;
+
+$large-screen-min-size: 1025px;
+$large-screen-max-width: 1400px;
+
+$single-content-max: $mobile-rotated-max-size;
+
+// Artsdatabanken pallette
+$coral-light: #e55440; // Korall
+$coral-dark: #cf3e1c; // Korall
+$winter-green-light: #16a979; // Vintergrønn
+$winter-green-dark: #007759; // Vintergrønn
+$sun-light: #f8ae00; // Sol
+$sun-dark: #b67717; // Sol
+$summer-grass-light: #9b9921; // Sommergress
+$summer-grass-green: #495e2e; // Sommergress
+$fresh-water-blue-light: #0283a1; // Ferskvannblå
+$fresh-water-blue-dark: #005a71; //Ferskvannblå
+
+// extended ferskvannsblå @navnebasen
+$fresh-water-blue-medium: #017590; // Ferskvannblå
+
+// extended ferskvannsblå @ARTSOBS
+$fresh-water-blue: #005B72; // Ferskvannblå
+$fresh-water-blue-80: #337B8D; // Artsobs only
+$fresh-water-blue-40: #99BDC6; // Artsobs only
+$fresh-water-blue-20: #CCDEE3; // Artsobs only
+$fresh-water-blue-10: #E6EFF1; // Artsobs only
+$fresh-water-blue-5: #F2F6F8; // Artsobs only
+
+// extended sun
+$sun-20: #FEEFCC;
+
+// SUPPORT
+$dirt-light: #faf1e4; // Jord beige
+$dirt-light-40: #FDF9F4;
+
+$dirt: #b4976c; // Jord
+$dirt-dark: #846031; // Jord
+$dirt-transparent: #b4976c30; // Jord transparent
+
+$ocean-light: #a6bbcb; // Hav
+$ocean: #4b6f79; // Hav
+$ocean-dark: #262f31; // Hav
+$ocean-15: #DEE0E0;
+
+$white: #FFFFFF;
+
+// pallette exctension
+$ocean-transparent: #0283a130;
+$grey-help-text: #555555; // Updated to match AA on greyish backgrounds
+$default-border-color: #bdbdbd;
+
+// HIGLIGHT-FONT (new because need contrast)
+// fresh-water + 50% blend;
+$highlight: #0283a150;
+
+// Palette general
+$link-color: $fresh-water-blue-medium;
+$primary: $ocean;
+$primary-color: $fresh-water-blue;
+$primary-color-hover: $fresh-water-blue-80;
+$secondary-color: $fresh-water-blue-20;
+$secondary-color-hover: $fresh-water-blue-10;
+$focus-color: $fresh-water-blue-light;
+$unselected-color: $fresh-water-blue-5;
+
+// Action colours
+$action-color: $primary-color;
+$info-color: $fresh-water-blue-light;
+$accept-color: $winter-green-dark;
+$reject-color: $coral-dark;
+$error-color: $coral-dark;
+$warning-color: $sun-light;
+$body-color: $ocean-dark;
+
+// ADDED FOR ARTSOBS 3.0
+$hover-color: $fresh-water-blue-10;
+$header-bg: $dirt-light;
+$border-width: 1px; // example
+$font-family-base: $font-chivo;
+$font-family-monospace: $font-courier;
+
+
+// MDB COLOR THEME:
+$primary: $primary;
+$secondary: $secondary-color;
+$success: $accept-color;
+$info: $info-color;
+$warning: $warning-color;
+$danger: $error-color;
+
+
+// padding sizes etc
+$base-size: 8px;
+$half-size: calc($base-size / 2); //4
+$double-size: calc($base-size * 2); //16
+$triple-size: calc($base-size * 3); //24
+
+// Font-sizes:
+$show-off-font-size: 20pt;
+$normal-font-size: 16px;
+$small-font-size: 14px;
+$very-small-font: 10pt;
+
+
+// Borders:
+$outline-width :2px;
+$outline: $outline-width solid $focus-color;
+
+// thumbnails:
+$thumbnail-width: 100px;
+$thumbnail-height: 80px;
+
+// icons:
+$icon-size: 42px;
+
+
+// Accordion-related
+$large-space: 36px;
+$small-space: 16px;
+$helptext-size: 18px;
+$helptext-line-height: 24;
+$accordion-bottom-margin: 1px;
+
+// Mobile
+$helptext-size-mobile: 16px;
+
+// Placement of things:
+$badge-size: 28px;
+
+// Border
+$border: 2px solid $fresh-water-blue-20;
+$dark-border: 2px solid $fresh-water-blue-40;
+
+// filter
+$filter-width: 430px;
+$filter-header-height: 78px;
+$filter-box-shadow: 0px 4px 20px 0px #00000026;
+
+// Map
+$map-button-size: 40px;
+$map-attribution-height: 21px;
