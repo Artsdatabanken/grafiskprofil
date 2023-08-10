@@ -101,14 +101,6 @@
     font-size: 32px;
 }
 
-@media (min-width:768px) {
-    body{
-        margin-bottom: 386px;
-        min-height: calc(100% - calc(386px + 120px));
-    }
-}
-
-
 @media (max-width: 767px) {
 
     .bottom div:last-child,
