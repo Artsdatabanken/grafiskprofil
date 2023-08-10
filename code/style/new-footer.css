@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.some-container li,
+.footer-list li {
+    display: inline-block;
+    margin-left: 36px;
+}
+
+.footer .some-container {
+    text-align: left;
+}
+
+.footer {
+    background: #fff9f0;
+    border: none;
+    border-top: 1px solid #2C2738; 
+    color: #2C2738;
+    height: 386px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: auto;
+    font-family: 'Chivo', regular;
+}
+
+.footer td a {
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.footer a {
+    color: #017590;
+}
+
+.footer .some-container a {
+    color: #2C2738;
+}
+
+.footer table td:first-child {
+    text-align: initial;
+}
+
+.bottom,
+.middle,
+.top {
+    display: block;
+    width: 100%;
+    font-size: 0;
+}
+
+.middle > div, 
+.top > div,
+.bottom > div{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    padding: 16px;
+    vertical-align: top;
+    font-size:16px;
+}
+
+.bottom {
+    min-height: 64px;
+    border-top: 1px solid #2C2738;
+}
+
+.top {
+    height: 64px;
+    border-bottom: 1px solid #2C2738;
+}
+
+.middle {
+    height: calc(100% - calc(64px * 2));
+}
+
+.bottom .center {
+    border-right: 1px solid #2C2738;
+    width: 80%;
+    padding-left: 46px;
+    text-align: left
+}
+
+.top .center,
+.middle .center {
+    width: 60%;
+    border-left: 1px solid #2C2738;
+    border-right: 1px solid #2C2738;
+}
+
+.footer ul,
+.footer ul li {
+    margin: 0;
+    margin-bottom: 0;
+}
+
+.footer ul li {
+    margin-right: 8px;
+}
+
+.footer .some-container a::before {
+    font-size: 32px;
+}
+
+@media (min-width:768px) {
+    body{
+        margin-bottom: 386px;
+        min-height: calc(100% - calc(386px + 120px));
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .bottom div:last-child,
+    .top div:last-child{
+        display:none;
+    }
+
+    .bottom .center,
+    .top .center,
+    .middle .center{
+        width: 80%;
+        border-right:none;
+    }
+
+    .bottom .center {
+        padding-left: 16px;
+    }
+
+    .bottom .center,
+    .footer td {
+        width: 100%;
+        display: block;
+        max-width: calc(100vw - 66px);
+    }
+
+    .footer td a {
+        max-width: 100%;
+        word-wrap: break-word;
+        hyphens:auto;
+    }
+
+    .bottom,
+    .footer,
+    .middle{
+        height:auto;
+    }
+
+    .footer .some-container {
+        border-top: 1px solid #2C2738;
+        display: block;
+        width: 100%;
+        margin-bottom: 0
+    }
+}
+
+@media (max-width: 340px) {
+    .middle > div, 
+    .top > div, 
+    .bottom > div{
+        width:10%;
+    }
+}
