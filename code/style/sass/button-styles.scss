@@ -1,0 +1,181 @@
+@import 'variables';
+
+// Variables
+$gap: $base-size;
+$button-font-size: 16px;
+$icon-size: 18px;
+$border-radius: 30px;
+$padding-horisontal: 22px;
+$padding-vertical: 14px;
+$border-width: 2px;
+$focus-border-width: 3px;
+$icon-button-size: 40px;
+$focus-outline: $focus-border-width solid $focus-color;
+
+//Focus outline
+// Had to override bootstrap reboot css which directly targets button. Ugly stuff.
+button:focus-visible,
+button:focus:not(:focus-visible),
+.timepicker-toggle-button:focus,
+.timepicker-button:focus,
+.datepicker-footer-btn:focus,
+.primary:focus,
+.secondary:focus,
+.text-button:focus,
+.ghost:focus {
+    outline: $focus-outline;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+// Button styles
+.chips,
+.btn,
+.adb-button {
+    padding: $padding-vertical $padding-horisontal;
+    border-radius: $border-radius;
+    border-width: $border-width;
+    border-style: solid;
+    box-sizing: border-box;
+    font-size: $button-font-size;
+    line-height: $button-font-size;
+    margin: $gap;
+    margin-left: 0;
+}
+
+
+.adb-button .material-icons,
+.adb-button .material-icons-outline {
+    vertical-align: text-top;
+    font-size: $icon-size;
+    line-height: $button-font-size;
+    margin-right: $gap;
+}
+
+.adb-button .end-icon {
+    margin-right: auto;
+    margin-left: $gap;
+}
+
+button:not(.icon-button).material-icons {
+    vertical-align: baseline;
+    margin-right: $gap;
+    font-size: inherit;
+}
+
+.primary {
+    background: $primary-color;
+    border-color: $primary-color;
+    color: $white
+}
+
+.primary:hover,
+.primary:active {
+    background: $primary-color-hover;
+    border-color: $primary-color-hover;
+    color: $white
+}
+
+.secondary {
+    background: $secondary-color;
+    border-color: $secondary-color;
+}
+
+.secondary:hover,
+.secondary:active {
+    background: $secondary-color-hover;
+    border-color: $secondary-color-hover;
+}
+
+
+.timepicker-button,
+.datepicker-footer-btn,
+.text-button,
+.ghost {
+    text-decoration: underline;
+    color: $primary-color;
+    border-color: transparent;
+    background: transparent;
+}
+
+
+.timepicker-button:hover,
+.datepicker-footer-btn:hover,
+.text-button:hover,
+.ghost:hover,
+.ghost:active,
+.secondary:active {
+    background: $secondary-color-hover;
+    border-color: $secondary-color-hover;
+    color: $body-color;
+}
+
+.ghost,
+.ghost:hover,
+.ghost:active {
+    color: $body-color;
+    border-color: $body-color;
+    text-decoration: none;
+}
+
+.timepicker-toggle-button:focus,
+.timepicker-button:focus,
+.datepicker-footer-btn:focus,
+.primary:focus,
+.secondary:focus,
+.primary:focus-visible,
+.secondary:focus-visible {
+    border-color: $white;
+}
+
+.datepicker-toggle-button,
+.timepicker-toggle-button,
+.icon-button {
+    width: $icon-button-size;
+    height: $icon-button-size;
+    border-radius: 50%;
+}
+
+.icon-button {
+    padding: 0;
+    margin: 0;
+    min-width: $icon-button-size;
+    min-height: $icon-button-size;
+}
+
+.icon-button .material-icons {
+    margin: 0
+}
+
+.icon-button.text-button,
+.icon-button.ghost {
+    color: $body-color;
+}
+
+.button-tabs {
+    width: 100%;
+    display: flex;
+}
+
+.button-tabs * {
+    flex: 1;
+}
+
+.button-tabs .adb-button {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.secondary.active {
+    border-color: $primary-color;
+    border-width: $half-size;
+}
+
+.button-tabs .secondary:not(.active) {
+    background: $unselected-color;
+    border: $unselected-color;
+}

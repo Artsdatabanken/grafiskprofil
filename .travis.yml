@@ -1,5 +1,6 @@
 language: node_js
-dist: trusty
+dist: jammy
+node_js: 20
 branches:
   only:
   - main
@@ -8,4 +9,6 @@ branches:
 install:
   - sudo apt-get install -y sshpass
 
-script: bash ./deploy.sh
+script: 
+  - bash ./compile-sass.sh
+  - bash ./deploy.sh
