@@ -1,2 +1,3 @@
 node_modules/*
-*/compiled-css/*
+code/style/compiled-css/*
+code/script/compiled-js/*

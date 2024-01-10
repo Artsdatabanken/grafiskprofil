@@ -1,0 +1,79 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Texts */
+
+.Body_L {
+    color: $ocean-dark;
+    font-size: 20px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.Body_M {
+    color: #000;
+    font-family: Chivo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 172%;
+}
+
+.Body_S {
+    color: #000;
+    font-family: Chivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 172%;
+}
+
+.Label_14 {
+    color: $ocean-dark;
+    font-size: 14px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.Label_18 {
+    color: $ocean-dark;
+    font-size: 18px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+}
+
+.Kode {
+    color: $ocean-dark;
+    text-align: center;
+    font-size: 14px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.Mellomtittel_15 {
+    color: $ocean-dark;
+    font-family: Chivo;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.225px;
+}
+
+.Tittel_17 {
+    color: $ocean-dark;
+    font-family: Chivo;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0.255px;
+}

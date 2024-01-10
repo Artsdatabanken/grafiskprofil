@@ -10,5 +10,5 @@ install:
   - sudo apt-get install -y sshpass
 
 script: 
-  - bash ./compile-sass.sh
+  - bash ./compile-code.sh
   - bash ./deploy.sh
