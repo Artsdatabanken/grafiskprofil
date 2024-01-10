@@ -29,7 +29,7 @@
 }
 
 .footer a {
-    color: #017590;
+    color: $fresh-water-blue-medium;
 }
 
 .footer .some-container a {

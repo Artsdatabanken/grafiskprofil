@@ -1,0 +1,55 @@
+@import 'variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Headings */
+
+.Heading_18_bold {
+    color: var(--Tekst_hav, #262F31);
+    font-family: Chivo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 172%;
+}
+
+.Heading_20_bold {
+    color: var(--Tekst_hav, #262F31);
+    font-family: Chivo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 172%;
+}
+
+.Heading_24 {
+    font-family: Chivo;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+    color: $ocean-dark;
+}
+
+.Heading_32 {
+    color: $ocean-dark;
+    font-size: 32px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 140%;
+    letter-spacing: 1.12px;
+}
+
+.Heading_40 {
+    color: $ocean-dark;
+    font-size: 40px;
+    font-family: Chivo;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 120%;
+}
+
+@media (max-width: 750px) {
+    .Heading_40 {
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,42 @@
+@import 'variables.scss';
+
+.breadcrumbs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.adb-breadcrumbs {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 19px 0;
+
+    span {
+        font-size: 14px;
+    }
+
+    > span:nth-child(even) {
+        color: $coral-light;
+        font-weight: 900;
+    }
+
+    > span:last-child {
+        font-weight: bold;
+    }
+
+    > span {
+        margin-right: 8px;
+    }
+}
+
+@media (max-width: 750px) {
+    .adb-breadcrumbs {
+        padding: 15px;
+
+        > :last-child {
+            font-weight: bold;
+        }
+    }
+}

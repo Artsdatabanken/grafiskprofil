@@ -1,0 +1,45 @@
+/* Nin spesific coloring scheme */
+
+$typeSystemColor: #EDEFEA;
+$typeSystemActiveColor: #D3E5E9;
+$mainTypeGroupColor: #DFEDE9;
+$variableColor: #DFEDE9;
+$mainTypeColor: #F8F1E8;
+$stepColor: #F8F1E8;
+$basicTypeColor: #ECECE0;
+$mappingUnitColor: #F7F9FB;
+
+// borders
+$nin_border_generic: #D9D9D9;
+
+// backbrounds
+$nin_light_grey: #f6f6f6;
+$nin_sand: #FFF9F0;
+$nin_accordion_open: #FBF5ED;
+$nin_navigation_tree_background: #F2F7F8;
+
+// font-color
+$nin_dark_grey: #525756;
+
+
+// Type colors
+$typeSystem: $typeSystemColor;
+
+$typeSystemActive: $typeSystemActiveColor;
+
+$mainTypeGroup: $mainTypeGroupColor;
+
+$variable: $variableColor;
+
+$variant: $nin_sand;
+
+$mainType: $mainTypeColor;
+
+$step: $stepColor;
+
+$basicType: $basicTypeColor;
+
+$mappingUnit: $mappingUnitColor;
+
+// Site max width
+$nin-site-max-width: 1400px;

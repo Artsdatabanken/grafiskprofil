@@ -1,0 +1,275 @@
+@import 'variables.scss';
+@import '_ninVariables.scss';
+
+/* cards */
+
+.adb-big-card {
+    display: flex;
+    border: 1px solid $nin_border_generic;
+    border-radius: 17px;
+    width: 100%;
+    padding: 60px;
+    background-color: #FFF;
+    max-width: 942px;
+    text-decoration: none;
+    color: $nin_dark_grey;
+}
+
+.adb-big-card:hover {
+    background-color: $typeSystem;
+}
+
+.adb-big-card:active {
+    background-color: $typeSystemActiveColor;
+}
+
+.adb-big-navigation-card {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.adb-big-navigation-card h4 {
+    font-size: 24px;
+    line-height: 120%;
+    color: $ocean-dark;
+}
+
+.adb-big-navigation-card .adb-navigate-icon {
+    font-size: 50px;
+    color: #CF3E1C
+}
+
+.adb-card-description {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 140%;
+    margin: 11px 0;
+    color: $ocean-dark;
+}
+
+.adb-big-navigation-card-image {
+    height: 139px;
+    width: 139px;
+    margin: 0 15px;
+}
+
+.adb-big-navigation-card-mid-element {
+    margin: 0 65px;
+}
+
+
+/* Image cards */
+
+.adb-image-card {
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+
+    .adb-image-card-image-wrapper {
+        height: 180px;
+    }
+
+    img {
+        object-fit: cover;
+        height: 180px;
+        width: 100%;
+    }
+
+    .adb-image-card-code {
+        position: absolute;
+        margin-left: 15px;
+        margin-top: -55px;
+        padding: 6px 15px;
+        background: $white;
+    }
+
+    .adb-image-card-content {
+        display: flex;
+        width: 100%;
+        padding: 32px 16px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        min-height: 115px;
+        height: auto;
+
+        .material-icons-outlined {
+            color: #cf3e1c;
+            font-size: 24px;
+            margin: 5px;
+            text-decoration: none;
+        }
+
+        .adb-image-card-content-flex {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.adb-image-card-compressed {
+    height: 100%;
+
+    a {
+        display: flex;
+        align-items: flex-end;
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid $nin_border_generic;
+        padding: 16px;
+        text-decoration: none;
+
+        .adb-image-card-content {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+
+            .material-icons-outlined {
+                color: #cf3e1c;
+                font-size: 24px;
+                margin: 5px;
+                text-decoration: none;
+            }
+
+            .adb-image-card-content-flex {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .Tittel_17 {
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.adb-image-card-compressed a:hover {
+    border-color: $fresh-water-blue;
+}
+
+.card-white {
+    background: #fff;
+}
+
+.nin-landform-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nin-variable-card-grid {
+    margin: 70px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    .nin-variable-card {
+        display: flex;
+        gap: 10px;
+        background: white;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding: 40px;
+        border: 1px solid $nin_border_generic;
+        border-radius: 17px;
+        text-decoration: none;
+        color: $ocean-dark;
+    }
+
+    .nin-variable-card:hover {
+        background: $typeSystem;
+    }
+
+    .nin-variable-card:active {
+        background: $typeSystemActive;
+    }
+
+    .nin-variable-card-top {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .adb-navigate-icon {
+        color: #CF3E1C;
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .nin-variable-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .adb-big-card {
+        display: flex;
+        padding: 20px;
+        margin: initial;
+        width: initial;
+        border-radius: 17px;
+        border: 1px solid $nin_border_generic;
+    }
+
+    .adb-big-navigation-card {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+
+        .adb-navigate-icon {
+            font-size: 30px;
+        }
+
+        .adb-big-navigation-card-image {
+            height: 50px;
+            width: 50px;
+        }
+
+        .adb-big-navigation-card-mid-element {
+            margin: 0;
+        }
+    }
+
+    .nin-variable-card-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+
+        .nin-variable-card {
+            padding: 20px;
+            max-width: 500px;
+        }
+    }
+
+    .Variable {
+        .page-top .page-top-row {
+            margin: 70px 15px;
+        }
+
+        .page-content {
+            margin: 0;
+            padding: 0;
+        }
+    }
+}

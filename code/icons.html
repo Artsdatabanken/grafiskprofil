@@ -9,6 +9,7 @@
     <link href="style/style-reset.css" rel="stylesheet"/>
     <link href="style/compiled-css/header.css" rel="stylesheet"/>
     <link href="style/compiled-css/footer.css" rel="stylesheet"/>
+    <link href="style/compiled-css/basicSite.css" rel="stylesheet"/>
     
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet"/>
@@ -57,7 +58,7 @@
         background:rgb(245, 204, 211)
        }
 
-       .icons td{
+       .icon-table td{
         border-bottom:1px solid lightgrey;
         text-align: center;
        }
@@ -126,31 +127,29 @@
     <div class="main">
       <div class="main-content width-adjuster">
         <div class="breadcrumbs">
-          <ul>
-            <li class="lead in-breadcrumb">
-              <a href="/">
-                Template
-                <!-- Top level breadcrumb-->
-              </a>
-            </li>
+          <p class="adb-breadcrumbs Label_14">
             <span>
-              > 
-              <!-- Add more breadcrumbs -->
+              <a href="index.html">
+                Template
+              </a>
             </span>
-            <a href="/icons">
-              Ikoner
-              <!-- Top level breadcrumb-->
-            </a>
-          </ul>
+            <span>
+                >
+            </span>
+            <span>
+                Ikoner
+            </span>
+          </p>
         </div>
+
         <div class="sidebarmenu">
           <!-- ADD SIDEBAR ELEMENTS HERE IF WANTED -->
         </div>
 
         <div class="content-placer">
           <div class="page-header">
-            <h1>Ikoner <!-- ADD Page title --></h1>
-            <h2>Revidering pågås fra 2022</h2>
+            <h1 class="Heading_40">Ikoner <!-- ADD Page title --></h1>
+            <h2 class="Heading_32">Revidering pågås fra 2022</h2>
             <span class="byline">
               Påstartet 2022
               <!-- Change this element -->
@@ -168,10 +167,10 @@
        
       </div>
 
-      <h2>Vedtatte ikoner</h2>
-      <h3>BIBLIOTEK: Material Icons & material-icons-outlined.</h3>
+      <h2 class="Heading_32">Vedtatte ikoner</h2>
+      <h3 class="Heading_24">BIBLIOTEK: Material Icons & material-icons-outlined.</h3>
 
-      <table class="accepted icons">
+      <table class="accepted icon-table">
         <tr>
           <th>Ikon</th>
           <th>Ikon-navn</th>
@@ -373,9 +372,9 @@
       </table>
 
       
-      <h2>Ikon som trengs å bestilles | vedtas | suppleres fra andre kilder</h2>
+      <h2 class="Heading_32">Ikon som trengs å bestilles | vedtas | suppleres fra andre kilder</h2>
       
-      <table class="accepted icons">
+      <table class="accepted icon-table">
         <tr>
           <th>Ikon</th>
           <th>Navn</th>
@@ -492,8 +491,8 @@
         </tr>
         </table>
 
-      <h2>Sammenligningstabekll</h2>
-      <table class="icons">
+      <h2 class="Heading_32">Sammenligningstabekll</h2>
+      <table class="icon-table">
         <tr>
           <th>Ikon</th>
           <th>Ikon-navn</th>
@@ -1302,39 +1301,38 @@
           <td>ØkGk</td>
           <td> Eiendommer kan gi svært mange treff i store polygoner<span class="change"> Må importeres som SVG </span></td>
         </tr>
-
-
       </table>  
     </div>
+      </div>
     </div>
     <footer class="adb-footer">
       <div class="top">
-          <div>
-              <div class="adb-beak-wrapper">
-                  <div class="adb-beak"></div>
-                  <div></div>
-              </div>
-              <div></div>
+        <div>
+          <div class="adb-beak-wrapper">
+            <div class="adb-beak"></div>
+            <div></div>
           </div>
+          <div></div>
+        </div>
           <div class="center"></div>
           <div></div>
-      </div>
-      <div class="middle">
+        </div>
+        <div class="middle">
           <div></div>
           <div id="adb-footer-center" class="center">
           </div>
           <div id="adb-footer-some" class="some-container">
           </div>
-      </div>
-      <div class="bottom">
+        </div>
+        <div class="bottom">
           <div class="center">
               <nav class="footer-wrapper">
-                  <ul id="adb-footer-links" class="footer-list">
-                  </ul>
+                <ul id="adb-footer-links" class="footer-list">
+                </ul>
               </nav>
+            </div>
+            <div></div>
           </div>
-          <div></div>
-      </div>
-    </footer>
+        </footer>
   </body>
 </html>

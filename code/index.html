@@ -8,11 +8,13 @@
     <link href="style/style-reset.css" rel="stylesheet"/>
     <link href="style/compiled-css/header.css" rel="stylesheet"/>
     <link href="style/compiled-css/footer.css" rel="stylesheet"/>
+    <link href="style/compiled-css/basicSite.css" rel="stylesheet"/>
 
     <script src="script/compiled-js/header.js"></script>
     <script src="script/compiled-js/footer.js"></script>
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
   <body>
@@ -44,28 +46,23 @@
     <div class="main">
       <div class="main-content width-adjuster">
         <div class="breadcrumbs">
-          <ul>
-            <li class="lead in-breadcrumb">
-              <a href="">
-                Template
-                <!-- Top level breadcrumb-->
-              </a>
-            </li>
+          <p class="adb-breadcrumbs Label_14">
+            <span></span>
             <span>
-              <!-- Add more breadcrumbs -->
+                >
             </span>
-          </ul>
-        </div>
-        <div class="sidebarmenu">
-          <!-- ADD SIDEBAR ELEMENTS HERE IF WANTED -->
+            <span>
+                Design
+            </span>
+          </p>
         </div>
 
         <div class="content-placer">
           <div class="page-header">
-            <h1>Maler og kodesnippets<!-- ADD Page title --></h1>
-            <h2>Her samler vi styling og maler som kan benyttes direkte</h2>
+            <h1 class="Heading_40">Maler og kodesnippets<!-- ADD Page title --></h1>
+            <h2 class="Heading_32">Her samler vi styling og maler som kan benyttes direkte</h2>
             <span class="byline">
-              Påstartet 2021
+              Påstartet 2021, oppdatert januar 2024
               <!-- Change this element -->
             </span>
           </div>
@@ -82,7 +79,7 @@
             </div>
 
             <div class="section">
-              <h2>Hva har vi laget?</h2>
+              <h2 class="Heading_32">Hva har vi laget?</h2>
               <p>
                 Så langt har vi to ansamlinger av datatyper, scripts og css. For
                 en interaktiv side må man ofte linke opp begge deler.
@@ -97,7 +94,7 @@
               </p>
             </div>
             <div class="section">
-              <h2>Applikasjonene våre</h2>
+              <h2 class="Heading_32">Applikasjonene våre</h2>
               <p>
                 Per nå benytter vi kun header som felleselement på applikasjoner
                 med egen ux. Da holder det å inkludere relevant js og css, ikke
@@ -106,40 +103,106 @@
             </div>
 
             <div class="section">
-              <h2>Se ressurser</h2>
-              <ul>
+              <h2 class="Heading_32">Se ressurser</h2>
+              <ul class="page-content-card-wrapper wrap-compressed">
                 <li>
-                  <a href="scripts.html">scripts</a>
+                  <div class="adb-image-card-compressed">
+                    <a href="scripts.html">
+                      <div class="adb-image-card-content">
+                        <div class="adb-image-card-content-flex">
+                          <div>
+                            <p class="Mellomtittel_15">
+                              if (curious) enter();
+                            </p>
+                            <p class="Tittel_17">
+                              Scripts
+                            </p>
+                            <p class="Mellomtittel_15">Her finner du javascript til forskjellig bruk</p>
+                          </div>
+                          <span class="material-icons-outlined">
+                            chevron_right
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="styling.html">styling</a>
+                  <div class="adb-image-card-compressed">
+                    <a href="styling.html">
+                      <div class="adb-image-card-content">
+                        <div class="adb-image-card-content-flex">
+                          <div>
+                            <p class="Mellomtittel_15">
+                              { border-color: <span style="color: blue">blue</span> }
+                            </p>
+                            <p class="Tittel_17">
+                              Styling
+                            </p>
+                            <p class="Mellomtittel_15">Her finner du stilark i css</p>
+                          </div>
+                          <span class="material-icons-outlined">
+                            chevron_right
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </li>
                 <li>
-                  <a href="icons.html">ikoner</a>
+                  <div class="adb-image-card-compressed">
+                    <a href="icons.html">
+                      <div class="adb-image-card-content">
+                        <div class="adb-image-card-content-flex">
+                          <div>
+                            <p class="Mellomtittel_15">
+                              <span class="material-icons-outlined">
+                                check
+                              </span>
+                              <span class="material-icons-outlined">
+                                my_location
+                              </span>
+                              <span class="material-icons-outlined">
+                                info
+                              </span>
+                            </p>
+                            <p class="Tittel_17">
+                              Ikoner
+                            </p>
+                            <p class="Mellomtittel_15">Se ikoner til bruk på nettsiden</p>
+                          </div>
+                          <span class="material-icons-outlined">
+                            chevron_right
+                          </span>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
                 </li>
               </ul>
+        
             </div>
-
             <div class="section">
-              <h2>Header og footer</h2>
+              <h2 class="Heading_32">Header og footer</h2>
               <p>
                 For øyeblikket finnes det et felles stylesheet for header og
                 footer, og en javascript for hver av dem.
               </p>
 
-              <h3>Inkludere filer</h3>
+              <h3 class="Heading_24">Inkludere filer</h3>
               <p>
                 Hvis du ønsker både header og footer kan du inkludere disse
                 scriptene i header-taggen på siden du bygger.
               </p>
               <pre>
                 <code>
-                &lt;link href="https://design.artsdatabanken.no/style/style-reset.css" rel="stylesheet" /&gt;
-                &lt;link href="https://design.artsdatabanken.no/style/layout.css" rel="stylesheet" /&gt;
-                &lt;link href="https://design.artsdatabanken.no/style/header-footer.css" rel="stylesheet" /&gt;
-                &lt;script src="https://design.artsdatabanken.no/script/header.js"&gt;&lt;/script&gt;
-                &lt;script src="https://design.artsdatabanken.no/script/footer.js"&gt;&lt;/script&gt;
-                &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+                  &lt;link href="https://design.artsdatabanken.no/style/style-reset.css" rel="stylesheet" /&gt;
+                  &lt;link href="https://design.artsdatabanken.no/style/compiled-css/header.css" rel="stylesheet" /&gt;
+                  &lt;link href="https://design.artsdatabanken.no/style/compiled-css/footer.css" rel="stylesheet" /&gt;
+                  &lt;script src="https://design.artsdatabanken.no/script/compiled-js/header.js"&gt;&lt;/script&gt;
+                  &lt;script src="https://design.artsdatabanken.no/script/compiled-js/footer.js"&gt;&lt;/script&gt;
+                  &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+                  &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"&gt;
                 </code>
               </pre>
             </div>

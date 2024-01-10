@@ -1,0 +1,57 @@
+@import 'variables.scss';
+@import 'breadCrumbs.scss';
+@import 'card.scss';
+@import 'headings.scss';
+@import 'text.scss';
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+// At the moment this stylesheet is only meant for this webpage
+
+h1, h2, h3 {
+    margin: 25px 0 10px 0;
+}
+
+p {
+    margin: 5px 0;
+}
+
+.main {
+    margin: 45px;
+    color: $ocean-dark;
+    background: $pageBackground;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: $fresh-water-blue-medium;
+}
+
+.scripts,
+.styling,
+.icons {
+    height: 50px;
+    width: 100px;
+    border: 2px solid;
+}
+
+.scripts {
+    border-color: $dirt-dark;
+}
+
+.styling {
+    border-color: $winter-green-dark;
+}
+
+.icons {
+    border-color: $sun-dark;
+}
+
+.page-content-card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 450px;
+}
