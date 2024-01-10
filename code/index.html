@@ -5,42 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
     <title>Template</title>
-    <link
-      href="https://design.artsdatabanken.no/style/style-reset.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://design.artsdatabanken.no/style/layout.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://design.artsdatabanken.no/style/header-footer.css"
-      rel="stylesheet"
-    />
-    <script src="https://design.artsdatabanken.no/script/header.js"></script>
-    <script src="https://design.artsdatabanken.no/script/footer.js"></script>
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
+    <link href="style/style-reset.css" rel="stylesheet"/>
+    <link href="style/compiled-css/header.css" rel="stylesheet"/>
+    <link href="style/compiled-css/footer.css" rel="stylesheet"/>
+
+    <script src="script/compiled-js/header.js"></script>
+    <script src="script/footer.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
   <body>
-    <header class="header">
-      <div class="width-adjuster">
-        <a href="https://artsdatabanken.no" class="header-logo">
-          <img
-            alt="Artsdatabanken"
-            src="https://artsdatabanken.no/Files/20973"
-            class="normal"
-          />
-          <img
-            alt="Artsdatabanken"
-            src="https://artsdatabanken.no/Files/20978"
-            class="mobile"
-          />
-        </a>
-        <button id="navbar-mobile" class="material-icons">menu</button>
-        <nav id="headermenu" class="hide"></nav>
+    <header class="adb-header">
+      <a href="https://artsdatabanken.no" class="adb-header-logo">
+          <img alt="Artsdatabanken-logo" src="icons/adb-logo/Artsdatabanken_Logo-CMYK-H-Colour@2x.png">
+      </a>
+      <div class="header-right-side">
+          <div id="adb_header_search" class="adb-header-search closed">
+              <form action="https://artsdatabanken.no/search/front">
+                  <input name="q" type="text" placeholder="Søk her" />
+                  <input style="display: none" name="all" value="1"/>
+                  <button type="submit">
+                      Søk
+                  </button>
+              </form>
+          </div>
+          <div class="adb-header-search-mobile">
+              <button id="adb_header_search_mobile" class="open-search-button" onclick="toggleSearch()">
+                  <span class="material-symbols-outlined">
+                      search
+                  </span>
+                  <span class="hide-mobile">Søk</span>
+              </button>
+          </div>
+          <nav class="header-menu-line" id="adb-headermenu"></nav>
       </div>
     </header>
     <div class="main">
