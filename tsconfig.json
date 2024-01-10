@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": false,
+        "noEmitOnError": true,
+        "removeComments": false,
+        "sourceMap": true,
+        "target": "es2016",
+        "outDir": "code/script/compiled-js"
+    },
+    "compileOnSave": true,
+    "include": [
+        "code/script/ts/*"
+    ]
+}

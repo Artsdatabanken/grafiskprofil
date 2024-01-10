@@ -1,14 +1,12 @@
 
 // Startup
 window.addEventListener('load', function() {
-    console.log("loaded script footer")
     getFooter();
 })
 
 // Lets pretend this is a part of the main site
 function getFooter(){       
     try{
-        console.log("making footer")
         // Obtaining the relevant doi to look up.
         let url = "https://www.artsdatabanken.no/api/Content/224885";
         fetch(url)
