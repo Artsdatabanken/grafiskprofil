@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css" rel="stylesheet"/>
     
     <script src="script/compiled-js/header.js"></script>
-    <script src="script/footer.js"></script>
+    <script src="script/compiled-js/footer.js"></script>
     
     <style>
         table{
@@ -57,7 +57,7 @@
         background:rgb(245, 204, 211)
        }
 
-       td{
+       .icons td{
         border-bottom:1px solid lightgrey;
         text-align: center;
        }
@@ -171,7 +171,7 @@
       <h2>Vedtatte ikoner</h2>
       <h3>BIBLIOTEK: Material Icons & material-icons-outlined.</h3>
 
-      <table class="accepted">
+      <table class="accepted icons">
         <tr>
           <th>Ikon</th>
           <th>Ikon-navn</th>
@@ -375,7 +375,7 @@
       
       <h2>Ikon som trengs å bestilles | vedtas | suppleres fra andre kilder</h2>
       
-      <table class="accepted">
+      <table class="accepted icons">
         <tr>
           <th>Ikon</th>
           <th>Navn</th>
@@ -493,7 +493,7 @@
         </table>
 
       <h2>Sammenligningstabekll</h2>
-      <table>
+      <table class="icons">
         <tr>
           <th>Ikon</th>
           <th>Ikon-navn</th>
@@ -1307,6 +1307,34 @@
       </table>  
     </div>
     </div>
-    <footer id="footer"></footer>
+    <footer class="adb-footer">
+      <div class="top">
+          <div>
+              <div class="adb-beak-wrapper">
+                  <div class="adb-beak"></div>
+                  <div></div>
+              </div>
+              <div></div>
+          </div>
+          <div class="center"></div>
+          <div></div>
+      </div>
+      <div class="middle">
+          <div></div>
+          <div id="adb-footer-center" class="center">
+          </div>
+          <div id="adb-footer-some" class="some-container">
+          </div>
+      </div>
+      <div class="bottom">
+          <div class="center">
+              <nav class="footer-wrapper">
+                  <ul id="adb-footer-links" class="footer-list">
+                  </ul>
+              </nav>
+          </div>
+          <div></div>
+      </div>
+    </footer>
   </body>
 </html>

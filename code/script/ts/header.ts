@@ -69,6 +69,7 @@ const getHeaderMenu = () => {
                     menuButtonChevron.innerHTML = 'expand_more';
 
                     const menuButton = document.createElement('button');
+                    menuButton.id = 'toggle-dropdown-button';
                     menuButton.classList.add('dropdown-toggle');
                     menuButton.ariaHasPopup = 'true';
                     menuButton.innerHTML = 'Meny';
