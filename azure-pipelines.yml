@@ -10,8 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- task: Bash@3
+  inputs:
+    filePath: 'compile-code.sh'
 
 - task: PublishBuildArtifacts@1
   inputs:
