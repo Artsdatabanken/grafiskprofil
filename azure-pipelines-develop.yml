@@ -14,9 +14,15 @@ steps:
   inputs:
     filePath: 'compile-code.sh'
 
+- task: Install tree
+  inputs:
+    script: sudo apt-get install -qq -y tree
+
 - task: Create fileindex
   inputs:
-    script:  find . -type d -exec tree -H ./code -o  '{}/index.html' \;
+    script: cd code  
+    find . -type d -exec tree -H . -o  '{}/index.html' \;
+    cd ..
 
 - task: PublishBuildArtifacts@1
   inputs:
