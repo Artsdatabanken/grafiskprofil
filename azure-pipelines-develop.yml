@@ -1,8 +1,3 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
 - develop
 
@@ -13,18 +8,13 @@ steps:
 - task: Bash@3
   inputs:
     filePath: 'compile-code.sh'
-
-- task: Install tree
-  inputs:
     script: sudo apt-get install -qq -y tree
-
-- task: Create fileindex
-  inputs:
+- task: Bash@3
+  inputs: 
     script: |
       cd code  
       find . -type d -exec tree -H . -o  '{}/index.html' \;
       cd ..
-
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'code'
