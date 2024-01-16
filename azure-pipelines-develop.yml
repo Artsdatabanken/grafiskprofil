@@ -14,6 +14,10 @@ steps:
   inputs:
     filePath: 'compile-code.sh'
 
+- task: Create fileindex
+  inputs:
+    script:  find . -type d -exec tree -H ./code -o  '{}/index.html' \;
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'code'
