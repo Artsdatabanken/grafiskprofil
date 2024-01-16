@@ -12,6 +12,7 @@ steps:
 - task: Bash@3
   inputs: 
     script: |
+      ls -l
       cd code  
       find . -type d -exec tree -H . -o  '{}/index.html' \;
       cd ..
