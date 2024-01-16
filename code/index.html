@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="favicon.ico" />
     <title>Template</title>
-    <link href="style/style-reset.css" rel="stylesheet"/>
-    <link href="style/compiled-css/header.css" rel="stylesheet"/>
-    <link href="style/compiled-css/footer.css" rel="stylesheet"/>
-    <link href="style/compiled-css/basicSite.css" rel="stylesheet"/>
+    <link href="style/style-reset.css" rel="stylesheet" />
+    <link href="style/compiled-css/header.css" rel="stylesheet" />
+    <link href="style/compiled-css/footer.css" rel="stylesheet" />
+    <link href="style/compiled-css/basicSite.css" rel="stylesheet" />
 
     <script src="script/compiled-js/header.js"></script>
     <script src="script/compiled-js/footer.js"></script>
 
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
   </head>
+
   <body>
     <header class="adb-header">
       <a href="https://artsdatabanken.no" class="adb-header-logo">
-          <img alt="Artsdatabanken-logo" src="icons/adb-logo/Artsdatabanken_Logo-CMYK-H-Colour@2x.png">
+        <img alt="Artsdatabanken-logo" src="icons/adb-logo/Artsdatabanken_Logo-CMYK-H-Colour@2x.png">
       </a>
       <div class="header-right-side">
-          <div id="adb_header_search" class="adb-header-search closed">
-              <form action="https://artsdatabanken.no/search/front">
-                  <input name="q" type="text" placeholder="Søk her" />
-                  <input style="display: none" name="all" value="1"/>
-                  <button type="submit">
-                      Søk
-                  </button>
-              </form>
-          </div>
-          <div class="adb-header-search-mobile">
-              <button id="adb_header_search_mobile" class="open-search-button" onclick="toggleSearch()">
-                  <span class="material-symbols-outlined">
-                      search
-                  </span>
-                  <span class="hide-mobile">Søk</span>
-              </button>
-          </div>
-          <nav class="header-menu-line" id="adb-headermenu"></nav>
+        <div id="adb_header_search" class="adb-header-search closed">
+          <form action="https://artsdatabanken.no/search/front">
+            <input name="q" type="text" placeholder="Søk her" />
+            <input style="display: none" name="all" value="1" />
+            <button type="submit">
+              Søk
+            </button>
+          </form>
+        </div>
+        <div class="adb-header-search-mobile">
+          <button id="adb_header_search_mobile" class="open-search-button" onclick="toggleSearch()">
+            <span class="material-symbols-outlined">
+              search
+            </span>
+            <span class="hide-mobile">Søk</span>
+          </button>
+        </div>
+        <nav class="header-menu-line" id="adb-headermenu"></nav>
       </div>
     </header>
     <div class="main">
@@ -49,10 +51,10 @@
           <p class="adb-breadcrumbs Label_14">
             <span></span>
             <span>
-                >
+              >
             </span>
             <span>
-                Design
+              Design
             </span>
           </p>
         </div>
@@ -99,6 +101,13 @@
                 Per nå benytter vi kun header som felleselement på applikasjoner
                 med egen ux. Da holder det å inkludere relevant js og css, ikke
                 alle stylesheets og js.
+              </p>
+            </div>
+
+            <div class="section">
+              <h2 class="Heading_32">Strukturen</h2>
+              <p>
+                Lenke til <a href="struktur.html">filstruktur</a>.
               </p>
             </div>
 
@@ -180,7 +189,7 @@
                   </div>
                 </li>
               </ul>
-        
+
             </div>
             <div class="section">
               <h2 class="Heading_32">Header og footer</h2>
@@ -195,16 +204,16 @@
                 scriptene i header-taggen på siden du bygger.
               </p>
               <pre>
-                <code>
-                  &lt;link href="https://design.artsdatabanken.no/style/style-reset.css" rel="stylesheet" /&gt;
-                  &lt;link href="https://design.artsdatabanken.no/style/compiled-css/header.css" rel="stylesheet" /&gt;
-                  &lt;link href="https://design.artsdatabanken.no/style/compiled-css/footer.css" rel="stylesheet" /&gt;
-                  &lt;script src="https://design.artsdatabanken.no/script/compiled-js/header.js"&gt;&lt;/script&gt;
-                  &lt;script src="https://design.artsdatabanken.no/script/compiled-js/footer.js"&gt;&lt;/script&gt;
-                  &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
-                  &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"&gt;
-                </code>
-              </pre>
+                  <code>
+                    &lt;link href="https://design.artsdatabanken.no/style/style-reset.css" rel="stylesheet" /&gt;
+                    &lt;link href="https://design.artsdatabanken.no/style/compiled-css/header.css" rel="stylesheet" /&gt;
+                    &lt;link href="https://design.artsdatabanken.no/style/compiled-css/footer.css" rel="stylesheet" /&gt;
+                    &lt;script src="https://design.artsdatabanken.no/script/compiled-js/header.js"&gt;&lt;/script&gt;
+                    &lt;script src="https://design.artsdatabanken.no/script/compiled-js/footer.js"&gt;&lt;/script&gt;
+                    &lt;link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"&gt;
+                    &lt;link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"&gt;
+                  </code>
+                </pre>
             </div>
           </div>
         </div>
@@ -212,31 +221,31 @@
     </div>
     <footer class="adb-footer">
       <div class="top">
-          <div>
-              <div class="adb-beak-wrapper">
-                  <div class="adb-beak"></div>
-                  <div></div>
-              </div>
-              <div></div>
+        <div>
+          <div class="adb-beak-wrapper">
+            <div class="adb-beak"></div>
+            <div></div>
           </div>
-          <div class="center"></div>
           <div></div>
+        </div>
+        <div class="center"></div>
+        <div></div>
       </div>
       <div class="middle">
-          <div></div>
-          <div id="adb-footer-center" class="center">
-          </div>
-          <div id="adb-footer-some" class="some-container">
-          </div>
+        <div></div>
+        <div id="adb-footer-center" class="center">
+        </div>
+        <div id="adb-footer-some" class="some-container">
+        </div>
       </div>
       <div class="bottom">
-          <div class="center">
-              <nav class="footer-wrapper">
-                  <ul id="adb-footer-links" class="footer-list">
-                  </ul>
-              </nav>
-          </div>
-          <div></div>
+        <div class="center">
+          <nav class="footer-wrapper">
+            <ul id="adb-footer-links" class="footer-list">
+            </ul>
+          </nav>
+        </div>
+        <div></div>
       </div>
     </footer>
   </body>
