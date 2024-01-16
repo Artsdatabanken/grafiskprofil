@@ -11,10 +11,8 @@ steps:
     script: sudo apt-get install -qq -y tree
 - task: Bash@3
   inputs: 
-    script: |
-      cd code  
-      find . -type d -exec tree -H . -o  '{}/index.html' \;
-      cd ..
+    filePath: 'tree.sh'
+
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: 'code'
