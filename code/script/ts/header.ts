@@ -92,17 +92,13 @@ const getHeaderMenu = () => {
                         console.error('unable to add header menu');
                     }
 
-                    for (let i in apimenus) {
-                        let submenu = apimenus[i];
-                        let id = submenu.Values.toString().replace(" ", "");
-
-                        // Using createelement to enable attachment of eventlistener
+                    apimenus.forEach((submenu: any, index: number) => {
                         let buttonname = submenu.Values;
 
                         // Generate the dropdowncontent 
                         const listElement = document.createElement('li');
                         listElement.classList.add('dropdown-list');
-                        listElement.id = 'dropdown-list-' + i;
+                        listElement.id = 'dropdown-list-' + index;
 
                         const listTitle = document.createElement('span');
                         listTitle.classList.add('dropdown-list-title');
@@ -111,12 +107,16 @@ const getHeaderMenu = () => {
                         listElement.appendChild(listTitle);
 
                         const menuDropdownList = document.createElement('ul');
-                        Array.prototype.forEach.call(submenu.References, (item) => {
+                        submenu.References.forEach((item: any) => {
                             const listItem = document.createElement('li');
-
                             const anchorItem = document.createElement('a');
                             anchorItem.classList.add('header-mega-link-element');
-                            anchorItem.href = 'https://artsdatabanken.no' + item.Url;
+
+                            if (item.Records.length < 2 || item.Heading === 'Kunnskapsstatus for artsmangfoldet') {
+                                anchorItem.href = 'https://artsdatabanken.no' + item.Url;
+                            } else {
+                                anchorItem.href = item.Records.find((record: any) => !record.Label).Values[0];
+                            }
 
                             const anchorItemContent = document.createElement('div');
                             anchorItemContent.classList.add('header-mega-link-text');
@@ -151,7 +151,8 @@ const getHeaderMenu = () => {
 
                         listElement.appendChild(menuDropdownList);
                         menuUl.appendChild(listElement);
-                    }
+                    });
+
 
                     menuButton.addEventListener('click', function () {
                         const dropDown = document.getElementById('dropdown-header-menu');
