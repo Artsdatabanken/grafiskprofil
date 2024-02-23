@@ -1,25 +1,135 @@
-<header class="adb-header">
-    <a href="https://artsdatabanken.no" class="adb-header-logo">
-        <img alt="Artsdatabanken-logo" src="https://design.artsdatabanken.no/icons/adb-logo/Artsdatabanken_Logo-CMYK-H-Colour@2x.png">
-    </a>
-    <div class="header-right-side">
-        <div id="adb_header_search" class="adb-header-search closed">
-            <form action="https://artsdatabanken.no/search/front">
-                <input name="q" type="text" placeholder="Søk her" />
-                <input style="display: none" name="all" value="1"/>
-                <button type="submit">
-                    Søk
-                </button>
-            </form>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Scripts</title>
+    <link href="../style/style-reset.css" rel="stylesheet"/>
+    <link href="../style/compiled-css/header.css" rel="stylesheet"/>
+    <link href="../style/compiled-css/footer.css" rel="stylesheet"/>
+    <link href="../style/compiled-css/basicSite.css" rel="stylesheet"/>
+
+    <script src="../script/compiled-js/header.js"></script>
+    <script src="../script/compiled-js/footer.js"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="adb-header">
+      <a href="https://artsdatabanken.no" class="adb-header-logo">
+          <img alt="Artsdatabanken-logo" src="https://design.artsdatabanken.no/icons/adb-logo/Artsdatabanken_Logo-CMYK-H-Colour@2x.png">
+      </a>
+      <div class="header-right-side">
+          <div id="adb_header_search" class="adb-header-search closed">
+              <form action="https://artsdatabanken.no/search/front">
+                  <input name="q" type="text" placeholder="Søk her" />
+                  <input style="display: none" name="all" value="1"/>
+                  <button type="submit">
+                      Søk
+                  </button>
+              </form>
+          </div>
+          <div class="adb-header-search-mobile">
+              <button id="adb_header_search_mobile" class="open-search-button" onclick="toggleSearch()">
+                  <span class="material-symbols-outlined">
+                      search
+                  </span>
+                  <span class="hide-mobile">Søk</span>
+              </button>
+          </div>
+          <nav class="header-menu-line" id="adb-headermenu"></nav>
+      </div>
+  </header>
+  <div class="main">
+    <div class="main-content width-adjuster">
+        <div class="breadcrumbs">
+            <p class="adb-breadcrumbs Label_14">
+              <span>
+                <a href="index.html">
+                  Design
+                </a>
+              </span>
+              <span>
+                  >
+              </span>
+              <a href="../templates.html">
+                Templates
+              </a>
+              <span>
+                  >
+              </span>
+              <span>
+                Header
+              </span>
+            </p>
         </div>
-        <div class="adb-header-search-mobile">
-            <button id="adb_header_search_mobile" class="open-search-button" onclick="toggleSearch()">
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-                <span class="hide-mobile">Søk</span>
-            </button>
+
+        <div class="content-placer Body_S">
+            <div class="page-header">
+                <h1 class="Heading_40">Header</h1>
+                <h2 class="Heading_32">Her kan du se html-kode for vår header</h2>
+            </div>
         </div>
-        <nav class="header-menu-line" id="adb-headermenu"></nav>
+
+        &lt;header class="adb-header"&gt;<br>
+            &lt;a href="https://artsdatabanken.no" class="adb-header-logo"&gt;<br>
+                &lt;img alt="Artsdatabanken-logo" src="https://design.artsdatabanken.no/icons/adb-logo/Artsdatabanken_Logo-CMYK-H-Colour@2x.png"&gt;<br>
+            &lt;/a&gt;<br>
+            &lt;div class="header-right-side"&gt;<br>
+                &lt;div id="adb_header_search" class="adb-header-search closed"&gt;<br>
+                    &lt;form action="https://artsdatabanken.no/search/front"&gt;<br>
+                        &lt;input name="q" type="text" placeholder="Søk her" /&gt;<br>
+                        &lt;input style="display: none" name="all" value="1"/&gt;<br>
+                        &lt;button type="submit"&gt;<br>
+                            Søk
+                        &lt;/button&gt;<br>
+                    &lt;/form&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;div class="adb-header-search-mobile"&gt;<br>
+                    &lt;button id="adb_header_search_mobile" class="open-search-button" onclick="toggleSearch()"&gt;<br>
+                        &lt;span class="material-symbols-outlined"&gt;<br>
+                            search
+                        &lt;/span&gt;<br>
+                        &lt;span class="hide-mobile"&gt;Søk&lt;/span&gt;<br>
+                    &lt;/button&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;nav class="header-menu-line" id="adb-headermenu"&gt;&lt;/nav&gt;<br>
+            &lt;/div&gt;<br>
+        &lt;/header&gt;
+
+      </div>
     </div>
-</header>
+    
+    <footer class="adb-footer">
+        <div class="top">
+            <div>
+                <div class="adb-beak-wrapper">
+                    <div class="adb-beak"></div>
+                    <div></div>
+                </div>
+                <div></div>
+            </div>
+            <div class="center"></div>
+            <div></div>
+        </div>
+        <div class="middle">
+            <div></div>
+            <div id="adb-footer-center" class="center">
+            </div>
+            <div id="adb-footer-some" class="some-container">
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="center">
+                <nav class="footer-wrapper">
+                    <ul id="adb-footer-links" class="footer-list">
+                    </ul>
+                </nav>
+            </div>
+            <div></div>
+        </div>
+    </footer>
+  </body>
+</html>
