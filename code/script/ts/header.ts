@@ -92,16 +92,14 @@ const getHeaderMenu = () => {
                         console.error('unable to add header menu');
                     }
 
-                    for (let i = 0; i < apimenus.length; i++) {
-                        let submenu = apimenus[i];
+                    apimenus.forEach((submenu: any, index: number) => {
 
-                        // Using createelement to enable attachment of eventlistener
                         let buttonname = submenu.Values;
 
                         // Generate the dropdowncontent 
                         const listElement = document.createElement('li');
                         listElement.classList.add('dropdown-list');
-                        listElement.id = 'dropdown-list-' + i;
+                        listElement.id = 'dropdown-list-' + index;
 
                         const listTitle = document.createElement('span');
                         listTitle.classList.add('dropdown-list-title');
@@ -110,20 +108,15 @@ const getHeaderMenu = () => {
                         listElement.appendChild(listTitle);
 
                         const menuDropdownList = document.createElement('ul');
-                        Array.prototype.forEach.call(submenu.References, (item) => {
+                        submenu.References.forEach((item: any) => {
                             const listItem = document.createElement('li');
-
                             const anchorItem = document.createElement('a');
                             anchorItem.classList.add('header-mega-link-element');
 
-                            if (i == 0) {
+                            if (item.Records.length < 2 || item.Heading === 'Kunnskapsstatus for artsmangfoldet') {
                                 anchorItem.href = 'https://artsdatabanken.no' + item.Url;
                             } else {
-                                if (item.Records[0]?.Values[0]?.indexOf('artsdatabanken.no') != -1) {
-                                    anchorItem.href = item.Records[0].Values[0];
-                                } else {
-                                    anchorItem.href = item.Records[1].Values[0];
-                                }
+                                anchorItem.href = item.Records.find((record: any) => !record.Label).Values[0];
                             }
 
                             const anchorItemContent = document.createElement('div');
@@ -159,7 +152,8 @@ const getHeaderMenu = () => {
 
                         listElement.appendChild(menuDropdownList);
                         menuUl.appendChild(listElement);
-                    }
+                    });
+
 
                     menuButton.addEventListener('click', function () {
                         const dropDown = document.getElementById('dropdown-header-menu');
