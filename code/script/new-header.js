@@ -27,7 +27,7 @@ window.addEventListener('click', function (e) {
 function getHeaderMenu() {
     try {
         // Obtaining the relevant doi to look up.
-        let url = "https://www.artsdatabanken.no/api/Content/341039";
+        let url = "https://artsdatabanken.no/api/Content/341039";
         fetch(url)
             .then((response) => {
                 return response.json()

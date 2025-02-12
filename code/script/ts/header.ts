@@ -55,7 +55,7 @@ const toggleSearch = () => {
 
 const getHeaderMenu = () => {
     try {
-        let url = "https://www.artsdatabanken.no/api/Content/341039";
+        let url = "https://artsdatabanken.no/api/Content/341039";
         fetch(url)
             .then((response) => {
                 return response.json()

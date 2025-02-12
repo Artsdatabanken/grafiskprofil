@@ -33,7 +33,7 @@ function getHeaderMenu(){
     try{
         console.log("making header menu")
         // Obtaining the relevant doi to look up.
-        let url = "https://www.artsdatabanken.no/api/Content/224883";
+        let url = "https://artsdatabanken.no/api/Content/224883";
         fetch(url)
         .then((response) => {
             return response.json()
