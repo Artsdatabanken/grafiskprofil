@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
 function getFooter(){       
     try{
         // Obtaining the relevant doi to look up.
-        let url = "https://www.artsdatabanken.no/api/Content/224885";
+        let url = "https://artsdatabanken.no/api/Content/224885";
         fetch(url)
         .then((response) => {
             return response.json()

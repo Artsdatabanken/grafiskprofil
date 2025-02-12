@@ -1,5 +1,5 @@
 const setElementContent = async (element: HTMLElement, contentId: number): Promise<HTMLElement> => {
-    const mainUrl = 'https://www.artsdatabanken.no/api/Content/';
+    const mainUrl = 'https://artsdatabanken.no/api/Content/';
     try {
         const result = await fetch(mainUrl + contentId);
         const json = await result.json();
